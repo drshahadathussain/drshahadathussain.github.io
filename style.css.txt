@@ -29,27 +29,7 @@ a:hover {
     text-decoration: underline;
 }
 
-footer {
-    margin-top: 20px;
-    padding: 10px;
-    background: #333;
-    color: white;
-}
 
-
-
-
-/* Ensure the body takes up the full height of the viewport */
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-/* Main content area */
-.main-content {
-    min-height: 100%; /* Ensure content takes at least the full height */
-    padding-bottom: 60px; /* Adjust based on the footer height */
-}
 
 /* Footer Styling */
 footer {
