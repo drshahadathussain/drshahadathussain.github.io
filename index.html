@@ -1,194 +1,245 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahadat Hussain, PhD</title>
+    <title>Shahadat Hussain - Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
         }
-        header {
+        .navbar {
+            background-color: #007bff;
+        }
+        .hero {
             background-color: #007bff;
             color: white;
-            padding: 20px;
+            padding: 100px 0;
             text-align: center;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1, h2 {
-            color: #007bff;
-        }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #007bff;
-            color: white;
-            margin-top: 20px;
         }
         .section {
-            margin-bottom: 40px;
+            padding: 60px 0;
         }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
+        .card {
+            margin-bottom: 20px;
         }
-        .contact-item {
-            margin: 10px;
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Shahadat Hussain</h1>
-        <p>Postdoctoral Researcher · Mechanical Engineering · ADAM Lab</p>
-        <div class="contact-info">
-            <div class="contact-item">📍 Khalifa University, Main Campus, Abu Dhabi, UAE 127788</div>
-            <div class="contact-item">📞 +971 50 628 0812</div>
-            <div class="contact-item">📧 shahadat_ind@yahoo.com</div>
-            <div class="contact-item">🔗 
-                <a href="https://sites.google.com/view/shahadathussain" target="_blank">Google Site</a> | 
-                <a href="https://www.linkedin.com/in/shahadathussain" target="_blank">LinkedIn</a> | 
-                <a href="https://github.com/shah.bksc" target="_blank">GitHub</a>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Shahadat Hussain</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Shahadat Hussain, PhD</h1>
+            <p>Postdoctoral Researcher | Mechanical Engineering | Additive Manufacturing | Metamaterials | Mechanical Testing | Coding Enthusiast | Data Science</p>
+            <p>📍 Khalifa University, Abu Dhabi, UAE</p>
+            <a href="Shahadat_Resume.pdf" download class="btn btn-light btn-lg">Download Resume <i class="fas fa-download"></i></a>
+            <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="btn btn-light btn-lg ml-2">Research Stats <i class="fas fa-chart-bar"></i></a>
+        </div>
+    </section>
+
+    <section id="about" class="section bg-light">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>An adept researcher with over four years of expertise in 3D printing, actively involved in various projects focusing on additive manufacturing. Proficient in exploring innovative advancements in 3D printing automation, skilled at fabricating prototypes, utilizing advanced materials characterization techniques, conducting mechanical testing, and trained in data analysis and visualization using Python libraries like pandas, numpy, scipy, matplotlib and seaborn, and scientific publications.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Postdoctoral Researcher</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Khalifa University, Abu Dhabi, UAE | Feb 2020 - Present</h6>
+                            <ul>
+                                <li>Analyzing attributes of additively manufactured NiTi TPMS structures.</li>
+                                <li>Conducting tensile and fatigue testing with advanced characterization methods.</li>
+                                <li>Published 5 research articles and developed lab manuals.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Fellow</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">CSIR-Advanced Materials and Processes Research Institute, Bhopal, India | May 2013 - Aug 2014</h6>
+                            <ul>
+                                <li>Extensive research in experimentation, data analysis, and teamwork.</li>
+                                <li>Engaged in alloy synthesis, metallography, and material characterization.</li>
+                                <li>Published 2 articles and collaborated with IIT Madras.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <div class="container">
-        <section class="section" id="summary">
-            <h2>Summary</h2>
-            <p>An adept researcher with over four years of expertise in 3D printing, actively involved in various projects focusing on additive manufacturing. Proficient in exploring innovative advancements in 3D printing automation, skilled at fabricating prototypes, utilizing advanced materials characterization techniques, conducting mechanical testing, and trained in data analysis and visualization using Python libraries like pandas, numpy, scipy, matplotlib and seaborn, and scientific publications.</p>
-        </section>
-
-        <section class="section" id="download-resume">
-            <h2>Download Resume</h2>
-            <p><a href="Shahadat_Resume.pdf" download>Click here to download my resume (PDF)</a></p>
-        </section>
-
-        <section class="section" id="research-stats">
-            <h2>📊 Research Stats</h2>
-            <p>Check out my research stats <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank">here</a>. (Replace with your actual Google Scholar link if available)</p>
-        </section>
-
-        <section class="section" id="work-experience">
-            <h2>Work Experience</h2>
-            <h3>Postdoctoral Researcher</h3>
-            <p>Mechanical Engineering, Khalifa University, Abu Dhabi, UAE | Feb 2020 - Present</p>
-            <ul>
-                <li>Analyzing the attributes of additively manufactured NiTi TPMS structures, such as Schwartz primitive and Schoen gyroid lattices, categorized as porous, cellular, and architected materials.</li>
-                <li>Conducting tensile and fatigue testing, utilizing characterization methods including SEM, XRD, EDS, and metallography, coupled with data analysis and visualization tools like Origin Lab, MS Excel, and various Python libraries.</li>
-                <li>Published 5 research articles in reputed scientific journals and developed lab manuals.</li>
-            </ul>
-
-            <h3>Project Fellow</h3>
-            <p>CSIR-Advanced Materials and Processes Research Institute, Bhopal, India | May 2013 - Aug 2014</p>
-            <ul>
-                <li>Extensive scientific research experience with experimentation, data analysis, teamwork, problem-solving, and effective communication. Proficient in relationship building, negotiation skills.</li>
-                <li>Engaged in diverse experimental tasks: alloy synthesis, metallography, heat treatment, and material characterization using spectroscopy, microscopy, diffractometry, calorimetry, hardness, tensile, and hot rolling.</li>
-                <li>Published 2 research articles, presented research via posters and oral presentations, collaborated with Indian Institute of Technology, Madras.</li>
-            </ul>
-        </section>
-
-        <section class="section" id="education">
+    <section id="education" class="section bg-light">
+        <div class="container">
             <h2>Education</h2>
-            <h3>PhD (Engineering Sciences) in Materials Science and Technology</h3>
-            <p>Academy of Scientific and Innovative Research, Bhopal, India | Aug 2014 - Jun 2019</p>
-            <ul>
-                <li>Doctoral research on Cu-Al-Ni shape memory alloys, studied impact of grain refiners, alloying additions, and processing parameters on shape memory properties for high-temperature applications.</li>
-                <li>Published 2 research articles, and delivered 5 conference presentations.</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PhD in Materials Science and Technology</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Academy of Scientific and Innovative Research, Bhopal, India | Aug 2014 - Jun 2019</h6>
+                            <ul>
+                                <li>Research on Cu-Al-Ni shape memory alloys.</li>
+                                <li>Published 2 articles and 5 conference presentations.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bachelor of Engineering in Mechanical Engineering</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">University Institute of Technology-RGPV, Bhopal, India | Aug 2008 - May 2012</h6>
+                            <ul>
+                                <li>Graduated with first division.</li>
+                                <li>Industrial training at SAIL-Bokaro.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h3>Bachelor of Engineering in Mechanical Engineering</h3>
-            <p>University Institute of Technology-RGPV, Bhopal, India | Aug 2008 - May 2012</p>
-            <ul>
-                <li>Graduated with first division aggregate.</li>
-                <li>Underwent 2-week industrial training at Steel Authority of India Limited (SAIL)-Bokaro.</li>
-            </ul>
-        </section>
-
-        <section class="section" id="skills">
+    <section id="skills" class="section">
+        <div class="container">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Software:</strong> Computer-Aided Design (CAD) such as FreeCAD 0.20, Python programming language and its libraries including pandas, numpy, scipy, matplotlib, and seaborn for data analysis and data visualization, Xpert HighScore Plus, ImageJ, Origin Lab, microscope image analysis software like Gatan Suite, and word processing tools like LaTeX.</li>
-                <li><strong>Fabrication:</strong> Additive Manufacturing and Vacuum induction melting technique, Heat treatment of alloys and quenching.</li>
-                <li><strong>Mechanical Testing:</strong> Tensile and compression testing using Instron 5969 static loading machine with Bluehill software and Fatigue testing using Instron 8872 dynamic loading machine with WaveMatrix software.</li>
-                <li><strong>Metallography:</strong> Grinding, polishing, hot and cold mounting, ultrasonic and plasma cleaning using Struer and Buehler equipment, and chemical etching of metal alloys.</li>
-                <li><strong>Materials Characterization:</strong> Scanning Electron Microscopes (SEM): JEOL 7610F, FEI Nova NanoSEM, and FEI Quanta 3D FIB, for imaging and EDS analysis, X-ray Diffraction: Bruker D2 Phaser and Rigaku MiniFlex II, Optical Microscopy: Leica microscopes, Thermal Analysis: Differential Scanning Calorimetry using Mettler Toledo DSC 1 and Setaram instruments, and Optical Emission Spectroscopy: Bruker Q4 Tasman.</li>
+            <ul class="skills-list">
+                <li><i class="fas fa-code"></i> Software: FreeCAD, Python (pandas, numpy, etc.), LaTeX</li>
+                <li><i class="fas fa-tools"></i> Fabrication: Additive Manufacturing, Heat Treatment</li>
+                <li><i class="fas fa-vial"></i> Mechanical Testing: Tensile, Fatigue using Instron machines</li>
+                <li><i class="fas fa-microscope"></i> Metallography: Grinding, Polishing, Etching</li>
+                <li><i class="fas fa-flask"></i> Materials Characterization: SEM, XRD, DSC</li>
             </ul>
-        </section>
+        </div>
+    </section>
 
-        <section class="section" id="projects">
+    <section id="projects" class="section bg-light">
+        <div class="container">
             <h2>Projects</h2>
-            <h3>Additive manufacturing of NiTi shape memory alloys, constitutive modeling and fatigue failure criteria</h3>
-            <p>Khalifa University, Abu Dhabi, UAE | Feb 2020 - Present</p>
-            <ul>
-                <li>Involved in 3D printing of NiTi samples and TPMS structures.</li>
-                <li>Extensive characterizations performed using SEM, TEM, XRD, AFM, DSC, and fatigue testing.</li>
-                <li>Project Outcomes: Made novel findings and published 5 research articles, conference presentations and development of lab manuals.</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Additive Manufacturing of NiTi Shape Memory Alloys</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Khalifa University | Feb 2020 - Present</h6>
+                            <p>Involved in 3D printing and characterizations. Published 5 articles.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Design and Development of Thermo-Responsive Shape Memory Materials</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">CSIR-AMPRI | Jun 2013 - Aug 2014</h6>
+                            <p>Developed copper-based materials. Published 2 articles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h3>Design and Development of Thermo-Responsive and Magnetic Shape Memory Materials and Devices for Engineering Applications</h3>
-            <p>CSIR-Advanced Materials and Processes Research Institute, Bhopal, India | Jun 2013 - Aug 2014</p>
-            <ul>
-                <li>Develop copper-based shape memory materials with superior mechanical properties, high transition temperatures, and cost-effective production of shape memory wires and strips.</li>
-                <li>Project outcomes: Published 2 research articles in scientific journals, presented at national events, collaborated with Indian Institute of Technology, Madras. Well-received oral and poster presentations.</li>
-            </ul>
-        </section>
-
-        <section class="section" id="certifications">
-            <h2>Certifications</h2>
-            <ul>
-                <li>Introduction to Project Management, June 2024, IBM</li>
-                <li>Additive Manufacturing Specialization, June 2024, Arizona State University</li>
-                <li>Data Science Professional Certificate, April 2024, IBM</li>
-                <li>Python for Everybody Specialization, February 2024, University of Michigan</li>
-                <li>FreeCAD: A Basic 3D Modeling, June 2023, Udemy</li>
-            </ul>
-        </section>
-
-        <section class="section" id="publications">
+    <section id="publications" class="section">
+        <div class="container">
             <h2>Publications</h2>
             <ul>
-                <li>Shahadat Hussain, Ali N Alagha, Wael Zaki, (2024) Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion. Journal of Materials Engineering and Performance, <a href="https://doi.org/10.1007/s11665-024-09162-7" target="_blank">https://doi.org/10.1007/s11665-024-09162-7</a>.</li>
-                <li>Shahadat Hussain, Ali N Alagha, Gregory N. Haidemenopoulos, Wael Zaki, (2023) Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion. Journal of Manufacturing Processes, 102:375-386, <a href="https://doi.org/10.1016/j.jmapro.2023.07.055" target="_blank">https://doi.org/10.1016/j.jmapro.2023.07.055</a>.</li>
+                <li><i class="fas fa-book"></i> Phase Transformation Behavior of NiTi TPMS Lattices (2024) - <a href="https://doi.org/10.1007/s11665-024-09162-7">DOI</a></li>
+                <li><i class="fas fa-book"></i> Microstructural Analysis of NiTi TPMS Lattices (2023) - <a href="https://doi.org/10.1016/j.jmapro.2023.07.055">DOI</a></li>
             </ul>
-            <p>(Additional publications from PhD and earlier work are available upon request or in full resume.)</p>
-        </section>
-    </div>
+            <p>Additional publications available in full resume.</p>
+        </div>
+    </section>
+
+    <section id="certifications" class="section bg-light">
+        <div class="container">
+            <h2>Certifications</h2>
+            <ul>
+                <li><i class="fas fa-certificate"></i> Introduction to Project Management (IBM, 2024)</li>
+                <li><i class="fas fa-certificate"></i> Additive Manufacturing Specialization (ASU, 2024)</li>
+                <li><i class="fas fa-certificate"></i> Data Science Professional Certificate (IBM, 2024)</li>
+                <li><i class="fas fa-certificate"></i> Python for Everybody (UMich, 2024)</li>
+                <li><i class="fas fa-certificate"></i> FreeCAD: Basic 3D Modeling (Udemy, 2023)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope"></i> shahadat_ind@yahoo.com</p>
+            <p><i class="fas fa-phone"></i> +971 50 628 0812</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shahadathussain">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/shah.bksc">GitHub</a></p>
+            <p><i class="fas fa-globe"></i> <a href="https://sites.google.com/view/shahadathussain">Website</a></p>
+        </div>
+    </section>
 
     <footer>
         <p>© 2025 by Shahadat Hussain, PhD. All rights reserved.</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Smooth scrolling
+        $('a[href^="#"]').on('click', function(event) {
+            var target = $(this.getAttribute('href'));
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').stop().animate({
+                    scrollTop: target.offset().top - 70
+                }, 1000);
+            }
+        });
+    </script>
 </body>
 </html>
-```
-
-To update your GitHub Pages site:
-1. Replace the existing `index.html` in your repository with this updated version.
-2. Ensure `Shahadat_Resume.pdf` is uploaded to the repository.
-3. Commit and push the changes.
-4. The title is now visible as "Shahadat Hussain" with the subtitle "Postdoctoral Researcher · Mechanical Engineering · ADAM Lab" at the top of the page, styled to match the resume layout you provided. Customize links (e.g., Google Scholar) and consider adding a profile image if desired—confirm if you want image generation or editing.
