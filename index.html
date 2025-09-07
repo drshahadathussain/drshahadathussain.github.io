@@ -12,10 +12,17 @@
             background-color: #f8f9fa;
         }
         .navbar {
-            background-color: #007bff;
+            background-color: #6f42c1; /* Purple theme */
+        }
+        .navbar-nav .nav-link {
+            cursor: pointer;
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #e0c1ff; /* Lighter purple on hover */
         }
         .hero {
-            background-color: #007bff;
+            background-color: #6f42c1; /* Purple theme */
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -25,6 +32,11 @@
         }
         .card {
             margin-bottom: 20px;
+            border-color: #6f42c1; /* Purple border */
+        }
+        .card-header {
+            background-color: #6f42c1; /* Purple header */
+            color: white;
         }
         .skills-list {
             list-style-type: none;
@@ -35,12 +47,21 @@
             margin: 5px 0;
             padding: 10px;
             border-radius: 5px;
+            border-left: 4px solid #6f42c1; /* Purple accent */
         }
         footer {
-            background-color: #007bff;
+            background-color: #6f42c1; /* Purple theme */
             color: white;
             padding: 20px 0;
             text-align: center;
+        }
+        .btn-primary {
+            background-color: #6f42c1; /* Purple button */
+            border-color: #6f42c1;
+        }
+        .btn-primary:hover {
+            background-color: #5a2e9d; /* Darker purple on hover */
+            border-color: #5a2e9d;
         }
     </style>
 </head>
@@ -70,8 +91,8 @@
             <h1>Shahadat Hussain, PhD</h1>
             <p>Postdoctoral Researcher | Mechanical Engineering | Additive Manufacturing | Metamaterials | Mechanical Testing | Coding Enthusiast | Data Science</p>
             <p>📍 Khalifa University, Abu Dhabi, UAE</p>
-            <a href="Shahadat_Resume.pdf" download class="btn btn-light btn-lg">Download Resume <i class="fas fa-download"></i></a>
-            <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="btn btn-light btn-lg ml-2">Research Stats <i class="fas fa-chart-bar"></i></a>
+            <a href="Shahadat_Resume.pdf" download class="btn btn-primary btn-lg">Download Resume <i class="fas fa-download"></i></a>
+            <a href="https://scholar.google.com/citations?user=your-google-scholar-id" target="_blank" class="btn btn-primary btn-lg ml-2">Research Stats <i class="fas fa-chart-bar"></i></a>
         </div>
     </section>
 
@@ -88,8 +109,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
+                        <div class="card-header">Postdoctoral Researcher</div>
                         <div class="card-body">
-                            <h5 class="card-title">Postdoctoral Researcher</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Khalifa University, Abu Dhabi, UAE | Feb 2020 - Present</h6>
                             <ul>
                                 <li>Analyzing attributes of additively manufactured NiTi TPMS structures.</li>
@@ -101,8 +122,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card">
+                        <div class="card-header">Project Fellow</div>
                         <div class="card-body">
-                            <h5 class="card-title">Project Fellow</h5>
                             <h6 class="card-subtitle mb-2 text-muted">CSIR-Advanced Materials and Processes Research Institute, Bhopal, India | May 2013 - Aug 2014</h6>
                             <ul>
                                 <li>Extensive research in experimentation, data analysis, and teamwork.</li>
@@ -122,8 +143,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
+                        <div class="card-header">PhD in Materials Science and Technology</div>
                         <div class="card-body">
-                            <h5 class="card-title">PhD in Materials Science and Technology</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Academy of Scientific and Innovative Research, Bhopal, India | Aug 2014 - Jun 2019</h6>
                             <ul>
                                 <li>Research on Cu-Al-Ni shape memory alloys.</li>
@@ -134,8 +155,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card">
+                        <div class="card-header">Bachelor of Engineering in Mechanical Engineering</div>
                         <div class="card-body">
-                            <h5 class="card-title">Bachelor of Engineering in Mechanical Engineering</h5>
                             <h6 class="card-subtitle mb-2 text-muted">University Institute of Technology-RGPV, Bhopal, India | Aug 2008 - May 2012</h6>
                             <ul>
                                 <li>Graduated with first division.</li>
@@ -167,8 +188,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
+                        <div class="card-header">Additive Manufacturing of NiTi Shape Memory Alloys</div>
                         <div class="card-body">
-                            <h5 class="card-title">Additive Manufacturing of NiTi Shape Memory Alloys</h5>
                             <h6 class="card-subtitle mb-2 text-muted">Khalifa University | Feb 2020 - Present</h6>
                             <p>Involved in 3D printing and characterizations. Published 5 articles.</p>
                         </div>
@@ -176,8 +197,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card">
+                        <div class="card-header">Design and Development of Thermo-Responsive Shape Memory Materials</div>
                         <div class="card-body">
-                            <h5 class="card-title">Design and Development of Thermo-Responsive Shape Memory Materials</h5>
                             <h6 class="card-subtitle mb-2 text-muted">CSIR-AMPRI | Jun 2013 - Aug 2014</h6>
                             <p>Developed copper-based materials. Published 2 articles.</p>
                         </div>
@@ -230,14 +251,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Smooth scrolling
-        $('a[href^="#"]').on('click', function(event) {
-            var target = $(this.getAttribute('href'));
-            if( target.length ) {
+        // Smooth scrolling for navigation links
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== "") {
                 event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top - 70
-                }, 1000);
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - 70
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
             }
         });
     </script>
