@@ -10,58 +10,77 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
+            overflow-x: hidden;
         }
         .navbar {
-            background-color: #6f42c1; /* Purple theme */
+            background-color: #6f42c1;
         }
         .navbar-nav .nav-link {
-            cursor: pointer;
             color: white;
+            cursor: pointer;
         }
         .navbar-nav .nav-link:hover {
-            color: #e0c1ff; /* Lighter purple on hover */
+            color: #e0c1ff;
         }
         .hero {
-            background-color: #6f42c1; /* Purple theme */
+            background-color: #6f42c1;
             color: white;
             padding: 100px 0;
             text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero img {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
         }
         .section {
-            padding: 60px 0;
+            padding: 40px 0;
+            text-align: center;
         }
         .card {
-            margin-bottom: 20px;
-            border-color: #6f42c1; /* Purple border */
+            border-color: #6f42c1;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
         }
         .card-header {
-            background-color: #6f42c1; /* Purple header */
+            background-color: #6f42c1;
             color: white;
-        }
-        .skills-list {
-            list-style-type: none;
-            padding: 0;
         }
         .skills-list li {
             background: #e9ecef;
-            margin: 5px 0;
+            margin: 5px;
             padding: 10px;
             border-radius: 5px;
-            border-left: 4px solid #6f42c1; /* Purple accent */
+            border-left: 4px solid #6f42c1;
+            display: inline-block;
         }
         footer {
-            background-color: #6f42c1; /* Purple theme */
+            background-color: #6f42c1;
             color: white;
             padding: 20px 0;
             text-align: center;
         }
         .btn-primary {
-            background-color: #6f42c1; /* Purple button */
+            background-color: #6f42c1;
             border-color: #6f42c1;
         }
         .btn-primary:hover {
-            background-color: #5a2e9d; /* Darker purple on hover */
+            background-color: #5a2e9d;
             border-color: #5a2e9d;
+        }
+        .icon {
+            font-size: 2em;
+            margin: 10px;
+            color: #6f42c1;
         }
     </style>
 </head>
@@ -76,13 +95,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#honors">Honors & Awards</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -91,81 +104,47 @@
     <section class="hero">
         <div class="container">
             <h1>Shahadat Hussain, PhD</h1>
-            <p>Research Associate | Metal and Composite Additive Manufacturing | Advanced Materials Engineering | Mechanical Engineering | Data Science</p>
-            <p>📍 Abu Dhabi Emirate, United Arab Emirates</p>
-            <a href="Profile.pdf" download class="btn btn-primary btn-lg">Download Resume <i class="fas fa-download"></i></a>
-            <a href="https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl=en" target="_blank" class="btn btn-primary btn-lg ml-2">Research Stats <i class="fas fa-chart-bar"></i></a>
+            <p>Research Associate | Additive Manufacturing | Materials Science</p>
+            <p>📍 Abu Dhabi, UAE</p>
+            <a href="Profile.pdf" download class="btn btn-primary btn-lg"><i class="fas fa-download"></i> Resume</a>
+            <a href="https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl=en" target="_blank" class="btn btn-primary btn-lg ml-2"><i class="fas fa-chart-bar"></i> Stats</a>
+            <img src="https://via.placeholder.com/200" alt="Profile Image">
         </div>
     </section>
 
     <section id="about" class="section bg-light">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Presently, I am focused on developing metamaterial composites using carbon and glass fibers with various polymer matrices as well as interpenetrating phase composites (IPCs). Additionally, I am advancing additive manufacturing of green steel via Fused Filament Fabrication (FFF), investigating printing parameters, mechanical properties, and large-scale applications in heavy structures. My expertise spans FFF, Laser Powder Bed Fusion, Stereolithography (SLA), and PolyJet methods, utilizing Raise3D Pro3 Plus HS, Forge1, and Forge for ceramic printing, Formlabs Form 2 and 3, Stratasys F370 and J750, and EOS M400 metal printers. I am also trained in operating an industrial ABB robot arm with a Meltio wire filament printing head, featuring six laser sources for advanced 3D printing.</p>
-            <p>I have gained expertise in additive manufacturing, specifically in the field of Selective Laser Melting/Laser Powder Bed Fusion, focusing on TPMS structures of NiTi. Additionally, I have experience in vacuum induction melting of copper-based shape memory alloys. Throughout my work, I have developed various transferable skills, including information management, data analysis, teamwork and collaboration, negotiation skills, creative problem solving, and project management.</p>
-            <p>I have expertise in operating advanced scientific equipment, including JEOL, FEI Quanta 3D FIB, and FEI Nova NanoSEM for SEI, BSE, and EDS, as well as Bruker D2 and Rigaku MiniFlex X-ray diffractometers and Leica optical microscopes. I am skilled in thermal analysis using Mettler Toledo and Setaram DSC instruments, and in conducting tensile, compression, and fatigue tests with Instron 5969 and 8872 machines. Additionally, I have experience in hot/cold rolling, heat treatment, quenching, metallography, and etching.</p>
-            <p>With a PhD in materials science and technology and a bachelor's degree in mechanical engineering, I possess a unique and cutting-edge skill set. My research focus on developing new copper-based shape memory alloys for high-temperature applications has resulted in the publication of research articles in highly reputable SCI journals in the field of materials science and technology.</p>
-            <p>My previous experiences include working as a project fellow in a government project and serving as a lecturer, which has honed my communication, presentation, management, coordination, and leadership skills. I have also gained teaching experience during my one-year tenure.</p>
+            <h2>About</h2>
+            <p>Expert in additive manufacturing and materials science, specializing in NiTi TPMS structures and green steel via FFF. Skilled in advanced 3D printing and scientific equipment.</p>
+            <div class="row">
+                <div class="col-md-4"><i class="fas fa-print icon"></i><p>3D Printing</p></div>
+                <div class="col-md-4"><i class="fas fa-flask icon"></i><p>Materials</p></div>
+                <div class="col-md-4"><i class="fas fa-robot icon"></i><p>Automation</p></div>
+            </div>
         </div>
     </section>
 
     <section id="experience" class="section">
         <div class="container">
-            <h2>Professional Experience</h2>
+            <h2>Experience</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
                         <div class="card-header">Postdoctoral Researcher</div>
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Khalifa University, Abu Dhabi, United Arab Emirates | February 2020 - Present (5 years 8 months)</h6>
-                            <ul>
-                                <li>Conducting an extensive review of the existing literature on additive manufacturing (3D printing) techniques for NiTi/nitinol shape memory alloys, focusing particularly on laser powder bed fusion (LPBF) methods, such as Selective Laser Melting (SLM).</li>
-                                <li>Examining and characterizing the properties of additively manufactured NiTi triply periodic minimal surface (TPMS) structures, specifically Schwartz primitive and Schoen gyroid lattices, which belong to the category of porous, cellular, and architected materials.</li>
-                                <li>Performing tensile and fatigue tests on thin NiTi wires with different diameters, chemical compositions, and surface treatments (including etched, mechanically polished, etched polished, and light oxide coating) using an Instron 8872 fatigue testing machine.</li>
-                                <li>Utilizing hydrofluoric and nitric acids for chemical etching of NiTi samples.</li>
-                                <li>Applying various analytical techniques such as optical microscopy, SEM (Scanning Electron Microscopy), XRD (X-ray Diffraction), EDS (Energy-Dispersive X-ray Spectroscopy), metallography, heat treatment, EBSD (Electron Backscatter Diffraction), AFM (Atomic Force Microscopy), and EBSD for the investigation and analysis of the materials.</li>
-                                <li>Proficient in various software applications including Xpert HighScore Plus, ImageJ, Origin, microscope image analysis software like Gatan suite, FreeCAD, programming languages such as Python, and word processing tools like LaTex.</li>
-                                <li>Contributing to the field through research article publications and conference presentations.</li>
-                            </ul>
+                            <p class="text-muted">Khalifa University, Abu Dhabi | 2020 - Present</p>
+                            <i class="fas fa-microscope icon"></i><p>NiTi TPMS Analysis</p>
+                            <i class="fas fa-tachometer-alt icon"></i><p>Tensile/Fatigue Tests</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="card">
-                        <div class="card-header">Project Fellow ⚙ Data Analysis ⚙ Team work and Collaboration ⚙CSIR-AMPRI</div>
+                        <div class="card-header">Project Fellow</div>
                         <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Council of Scientific and Industrial Research, Bhopal Area, India | May 2013 - August 2014 (1 year 4 months)</h6>
-                            <ul>
-                                <li>During my tenure as a researcher at CSIR-Advanced Materials and Processes Research Institute, I gained valuable experience in various aspects of the scientific research process. This included making scientific observations, conducting experiments, formulating hypotheses, collecting and managing data, performing data analysis, fostering teamwork and collaboration, utilizing creative problem-solving skills, and effectively communicating both orally and in written form. Additionally, I developed skills in building relationships with other institutes and suppliers, as well as negotiation skills.</li>
-                                <li>One of the significant projects I worked on was titled "Design and Development of Thermo-responsive and Magnetic Shape Memory Materials and Devices for Engineering Applications," which was part of the five-year plan of the Government of India. The project was sponsored by the Council of Scientific and Industrial Research in New Delhi.</li>
-                                <li>Within the scope of this project, I engaged in experimental work that encompassed various tasks. These included the synthesis of alloys through vacuum induction melting, conducting standard metallography procedures, performing heat treatment processes, and characterizing the materials using techniques such as optical emission spectroscopy, optical microscopy, scanning electron microscopy, x-ray diffractometry, differential scanning calorimetry, hardness testing, tensile testing, and hot rolling.</li>
-                                <li>The outcomes of my research efforts resulted in the publication of five research articles in respected SCI journals. Additionally, I had the opportunity to present my findings through poster and oral presentations. Furthermore, I collaborated with the Metallurgical and Materials Engineering department at the Indian Institute of Technology, Madras, enhancing the interdisciplinary nature of my research endeavors.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Lecturer ⚙ Time Management ⚙ Skill Training Program</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">ORIENTAL COLLEGE OF TECHNOLOGY BHOPAL, Bhopal Area, India | September 2012 - May 2013 (9 months)</h6>
-                            <ul>
-                                <li>I played an active role in both teaching and management during my time as an educator. I was responsible for instructing students in various mechanical engineering subjects, catering to first, second, and third-year engineering students. This experience allowed me to develop a strong foundation in materials science, machine component design, strength and mechanics of materials, and basic mechanical engineering concepts. Additionally, I facilitated laboratory activities to enhance the practical understanding of the students.</li>
-                                <li>I actively participated in a two-week ISTE workshop on Engineering Thermodynamics, which was organized by the Indian Institute of Technology Bombay. This workshop provided me with valuable skills, including classification techniques, strategies for solving numerical problems, and effective methods of presenting technical information.</li>
-                                <li>I received positive feedback from students regarding my lectures, successfully completing the syllabus within the designated time frame. I encouraged students to strive for academic excellence and supported their efforts to improve their semester results. By fostering a warm and supportive environment, I was able to establish strong relationships with the students, creating a conducive learning atmosphere.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Intern</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Steel Authority of India Limited, Bokaro Area, India | June 2011 - July 2011 (2 months)</h6>
-                            <ul>
-                                <li>I underwent a comprehensive two-week industrial training program at SAIL-Bokaro, located in Bokaro Steel City, Jharkhand, India. During this training, I gained practical knowledge and hands-on experience in various departments and facilities.</li>
-                                <li>Specifically, I received training and insights into the operations and processes of Coke Ovens, Blast Furnace, Machine Shops, Foundry Shop, Steel Melting Shop, Continuous Casting Shop, Hot Rolling Mill, and Cold Rolling Mill. This immersive experience allowed me to understand the intricacies and functioning of each area, providing valuable exposure to the steel manufacturing industry.</li>
-                            </ul>
+                            <p class="text-muted">CSIR-AMPRI, India | 2013 - 2014</p>
+                            <i class="fas fa-vial icon"></i><p>Alloy Synthesis</p>
+                            <i class="fas fa-users icon"></i><p>Team Collaboration</p>
                         </div>
                     </div>
                 </div>
@@ -173,132 +152,14 @@
         </div>
     </section>
 
-    <section id="education" class="section bg-light">
-        <div class="container">
-            <h2>Education</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Doctor of Philosophy (PhD), Engineering Sciences</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Academy of Scientific and Innovative Research, CSIR-AMPRI, Bhopal | 2014 - 2019</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Bachelor of Engineering, Mechanical Engineering</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Rajiv Gandhi Prodyogiki Vishwavidyalaya, UIT-RGPV, Bhopal | 2008 - 2012</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Class 12th, Physics, Chemistry, Mathematics, English, Informatics Practices</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Delhi Public School, Bokaro Steel City | 2005 - 2007</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Class 10th, Regular/General High School/Secondary Diploma Program</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Bokaro Public School, Bokaro Steel City | 1998 - 2005</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
+    <section id="skills" class="section bg-light">
         <div class="container">
             <h2>Skills</h2>
             <ul class="skills-list">
                 <li><i class="fas fa-code"></i> Shell Scripting</li>
                 <li><i class="fas fa-tools"></i> Additive Manufacturing</li>
                 <li><i class="fas fa-flask"></i> Materials Characterization</li>
-                <li><i class="fas fa-code"></i> Software: FreeCAD, Python (pandas, numpy, etc.), LaTeX, Xpert HighScore Plus, ImageJ, Origin, Gatan Suite</li>
-                <li><i class="fas fa-tools"></i> Fabrication: Additive Manufacturing (FFF, LPBF, SLA, PolyJet), Vacuum Induction Melting, Heat Treatment, Quenching</li>
-                <li><i class="fas fa-vial"></i> Mechanical Testing: Tensile, Compression, Fatigue using Instron 5969 and 8872</li>
-                <li><i class="fas fa-microscope"></i> Metallography: Grinding, Polishing, Mounting, Cleaning, Etching</li>
-                <li><i class="fas fa-flask"></i> Materials Characterization: SEM (JEOL, FEI), XRD (Bruker, Rigaku), Optical Microscopy (Leica), DSC (Mettler Toledo, Setaram), EBSD, AFM</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="languages" class="section bg-light">
-        <div class="container">
-            <h2>Languages</h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-language"></i> English (Full Professional)</li>
-                <li><i class="fas fa-language"></i> Hindi (Native or Bilingual)</li>
-                <li><i class="fas fa-language"></i> Urdu (Native or Bilingual)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Additive Manufacturing of NiTi Shape Memory Alloys</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">Khalifa University | Feb 2020 - Present</h6>
-                            <p>Involved in 3D printing and characterizations. Published 5 articles.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Design and Development of Thermo-Responsive and Magnetic Shape Memory Materials and Devices for Engineering Applications</div>
-                        <div class="card-body">
-                            <h6 class="card-subtitle mb-2 text-muted">CSIR-AMPRI | Jun 2013 - Aug 2014</h6>
-                            <p>Developed copper-based materials. Published 2 articles.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="publications" class="section bg-light">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul>
-                <li><i class="fas fa-book"></i> Role of alloying additions on the properties of Cu–Al–Mn shape memory alloys</li>
-                <li><i class="fas fa-book"></i> Influence of niobium and silver on mechanical properties and shape memory behavior of Cu-12Al-4Mn alloys</li>
-                <li><i class="fas fa-book"></i> Additive manufacturing of shape memory alloys: A review with emphasis on powder bed systems</li>
-                <li><i class="fas fa-book"></i> Imperfections Formation in Thin Layers of NiTi Triply Periodic Minimal Surface Lattices Fabricated Using Laser Powder Bed Fusion</li>
-                <li><i class="fas fa-book"></i> Inhomogeneous Microstructure due to Non-Uniform Solidification Rate in NiTi Triply Periodic Minimal Surface (TPMS) Structures Fabricated via Laser Powder Bed Fusion</li>
-            </ul>
-            <p>Additional publications available in full resume.</p>
-        </div>
-    </section>
-
-    <section id="certifications" class="section">
-        <div class="container">
-            <h2>Certifications</h2>
-            <ul>
-                <li><i class="fas fa-certificate"></i> MATLAB</li>
-                <li><i class="fas fa-certificate"></i> Teaching Certificate Course For Postgraduate Students (20 hrs - 9 modules - 1 project)</li>
-                <li><i class="fas fa-certificate"></i> Responsible Conduct of Research (Curriculum Group) Engineering and Computing RCR (Course Learner Group) (5 hrs - 8 modules)</li>
-                <li><i class="fas fa-certificate"></i> Introduction to Project Management (10 hrs - 5 modules - 5 quizzes)</li>
-                <li><i class="fas fa-certificate"></i> Additive Manufacturing Specialization (36 hrs - 5 courses - 5 projects)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="honors" class="section bg-light">
-        <div class="container">
-            <h2>Honors & Awards</h2>
-            <ul>
-                <li><i class="fas fa-award"></i> Highest Number of Publications</li>
-                <li><i class="fas fa-award"></i> Second Highest CGPA</li>
+                <li><i class="fas fa-chart-line"></i> Data Analysis</li>
             </ul>
         </div>
     </section>
@@ -306,26 +167,22 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>Contact</h2>
-            <p><i class="fas fa-map-marker-alt"></i> Muroor Road, Abu Dhabi, UAE</p>
-            <p><i class="fas fa-phone"></i> +971 50 628 0812</p>
-            <p><i class="fas fa-envelope"></i> shahadat_ind@yahoo.com</p>
-            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/shahadathussain" target="_blank">LinkedIn</a></p>
-            <p><i class="fas fa-globe"></i> <a href="https://sites.google.com/view/shahadathussain" target="_blank">Personal Website</a></p>
-            <p><i class="fas fa-globe"></i> <a href="https://www.ku.ac.ae/college-people/dr-shahadat-hussain" target="_blank">Company Profile</a></p>
-            <p><i class="fas fa-globe"></i> <a href="https://www.coursera.org/learner/shahadathussain" target="_blank">Coursera Profile</a></p>
-            <p><i class="fab fa-github"></i> <a href="https://github.com/shah.bksc" target="_blank">GitHub</a></p>
+            <p><i class="fas fa-map-marker-alt icon"></i> Muroor Road, Abu Dhabi, UAE</p>
+            <p><i class="fas fa-phone icon"></i> +971 50 628 0812</p>
+            <p><i class="fas fa-envelope icon"></i> shahadat_ind@yahoo.com</p>
+            <a href="https://www.linkedin.com/in/shahadathussain" target="_blank"><i class="fab fa-linkedin icon"></i></a>
+            <a href="https://sites.google.com/view/shahadathussain" target="_blank"><i class="fas fa-globe icon"></i></a>
         </div>
     </section>
 
     <footer>
-        <p>© 2025 by Shahadat Hussain, PhD. All rights reserved.</p>
+        <p>© 2025 Shahadat Hussain, PhD. All rights reserved.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Smooth scrolling for navigation links
         $('a.nav-link').on('click', function(event) {
             if (this.hash !== "") {
                 event.preventDefault();
