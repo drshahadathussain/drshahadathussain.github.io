@@ -11,7 +11,7 @@ Professional research portfolio website for Dr. Shahadat Hussain, showcasing exp
 - Mechanical Testing & Analysis
 
 ## 🚀 Live Website
-[https://yourusername.github.io](https://yourusername.github.io)
+[https://yourusername.github.io](https://drshahadathussain.github.io)
 
 ## 📁 Setup Instructions
 
@@ -21,8 +21,8 @@ Professional research portfolio website for Dr. Shahadat Hussain, showcasing exp
 
 2. **Upload Files**
    - Upload all files from this folder to your repository
-   - Place your photo in `assets/shahadat-photo.jpg`
-   - Place your CV in `assets/resume.pdf`
+   - Place your photo in `assets/shahadatHussain.png`
+   - Place your CV in `assets/Shahadat-Resume.pdf`
 
 3. **Enable GitHub Pages**
    - Go to repository Settings → Pages
@@ -70,4 +70,4 @@ MIT License - Feel free to use this template for your own portfolio!
 Dr. Shahadat Hussain
 - Email: shahadat_ind@yahoo.com
 - Phone: +971 50 628 0812
-- LinkedIn: linkedin.com/in/shahadathussainCreating my website using github
+- LinkedIn: linkedin.com/in/shahadathussain
