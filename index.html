@@ -3,149 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shahadat Hussain - Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-            overflow-x: hidden;
-        }
-        .navbar {
-            background-color: #6f42c1;
-        }
-        .navbar-nav .nav-link {
-            color: white;
-            cursor: pointer;
-        }
-        .navbar-nav .nav-link:hover {
-            color: #e0c1ff;
-        }
-        .hero {
-            background-color: #6f42c1;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero img {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0.2;
-        }
-        .section {
-            padding: 40px 0;
-            text-align: center;
-        }
-        .card {
-            border-color: #6f42c1;
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .card-header {
-            background-color: #6f42c1;
-            color: white;
-        }
-        .skills-list li {
-            background: #e9ecef;
-            margin: 5px;
-            padding: 10px;
-            border-radius: 5px;
-            border-left: 4px solid #6f42c1;
-            display: inline-block;
-        }
-        footer {
-            background-color: #6f42c1;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .btn-primary {
-            background-color: #6f42c1;
-            border-color: #6f42c1;
-        }
-        .btn-primary:hover {
-            background-color: #5a2e9d;
-            border-color: #5a2e9d;
-        }
-        .icon {
-            font-size: 2em;
-            margin: 10px;
-            color: #6f42c1;
-        }
-    </style>
+    <title>Dr. Shahadat Hussain | Materials Science Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Shahadat Hussain</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">SH<span class="highlight">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <h1>Shahadat Hussain, PhD</h1>
-            <p>Research Associate | Additive Manufacturing | Materials Science</p>
-            <p>📍 Abu Dhabi, UAE</p>
-            <a href="./Shahadat_Resume.pdf" download class="btn btn-primary btn-lg"><i class="fas fa-download"></i> Resume</a>
-            <a href="https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl=en" target="_blank" class="btn btn-primary btn-lg ml-2"><i class="fas fa-chart-bar"></i> Stats</a>
-            <!-- <img src="https://via.placeholder.com/200" alt="Profile Image"> --->
-        </div>
-    </section>
-
-    <section id="about" class="section bg-light">
-        <div class="container">
-            <h2>About</h2>
-            <p>Expert in additive manufacturing and materials science, specializing in 3D printing of NiTi TPMS and green steel via FFF. Skilled in advanced 3D printing and scientific tools.</p>
-            <div class="row">
-                <div class="col-md-4"><i class="fas fa-print icon"></i><p>3D Printing</p></div>
-                <div class="col-md-4"><i class="fas fa-flask icon"></i><p>Materials</p></div>
-                <div class="col-md-4"><i class="fas fa-robot icon"></i><p>Automation</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Experience</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Postdoctoral Researcher</div>
-                        <div class="card-body">
-                            <p class="text-muted">Khalifa University, Abu Dhabi | 2020 - Present</p>
-                            <i class="fas fa-microscope icon"></i><p> Metal 3D Printing of NiTi TPMS Lattices</p>
-                            <i class="fas fa-tachometer-alt icon"></i><p>Tensile/Fatigue Tests</p>
-                        </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h5 class="subtitle">POSTDOCTORAL RESEARCHER | MATERIALS SCIENCE</h5>
+                    <h1>Dr. Shahadat <span class="highlight">Hussain</span></h1>
+                    <p class="tagline">Specializing in Additive Manufacturing, 3D Printing of NiTi Shape Memory Alloys, and Advanced Materials Characterization</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="assets/resume.pdf" class="btn btn-secondary" download>Download CV</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://sites.google.com/view/shahadathussain" target="_blank"><i class="fas fa-globe"></i></a>
+                        <a href="https://linkedin.com/in/shahadathussain" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:shahadat_ind@yahoo.com"><i class="fas fa-envelope"></i></a>
+                        <a href="https://scholar.google.com" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">Project Fellow</div>
-                        <div class="card-body">
-                            <p class="text-muted">CSIR-AMPRI, India | 2013 - 2014</p>
-                            <i class="fas fa-vial icon"></i><p>Alloy Synthesis</p>
-                            <i class="fas fa-users icon"></i><p>Team Collaboration</p>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="assets/shahadat-photo.jpg" alt="Dr. Shahadat Hussain">
+                        <div class="image-badge">
+                            <span>4+ Years in 3D Printing Research</span>
                         </div>
                     </div>
                 </div>
@@ -153,72 +59,181 @@
         </div>
     </section>
 
-    <section id="education" class="section bg-light">
+    <!-- Research Focus -->
+    <section id="research" class="research-section">
         <div class="container">
-            <h2>Education</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">PhD, Engineering Sciences</div>
-                        <div class="card-body">
-                            <p class="text-muted">Academy of Scientific and Innovative Research, Bhopal | 2014 - 2019</p>
-                        </div>
+            <h2 class="section-title">Research Focus</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Additive Manufacturing</h3>
+                    <p>Laser Powder Bed Fusion of NiTi Shape Memory Alloys and TPMS lattice structures (Schwartz primitive & Schoen gyroid)</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Materials Characterization</h3>
+                    <p>SEM, XRD, EDS, TEM, AFM, DSC analysis of additively manufactured materials</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Mechanical Testing</h3>
+                    <p>Tensile, compression, and fatigue testing with data analysis using Python (pandas, numpy, matplotlib)</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Constitutive Modeling</h3>
+                    <p>Fatigue failure criteria development for 3D printed NiTi shape memory alloys</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2020 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Postdoctoral Researcher</h3>
+                        <h4>Khalifa University, Abu Dhabi, UAE</h4>
+                        <ul>
+                            <li>Analyzing additively manufactured NiTi TPMS structures (porous, cellular, architected materials)</li>
+                            <li>Conducting tensile/fatigue testing with SEM, XRD, EDS characterization</li>
+                            <li>Published 5 research articles in reputed journals</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-header">B.E., Mechanical Engineering</div>
-                        <div class="card-body">
-                            <p class="text-muted">Rajiv Gandhi Prodyogiki Vishwavidyalaya, Bhopal | 2008 - 2012</p>
-                        </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">May 2013 - Aug 2014</div>
+                    <div class="timeline-content">
+                        <h3>Project Fellow</h3>
+                        <h4>CSIR-AMPRI, Bhopal, India</h4>
+                        <ul>
+                            <li>Alloy synthesis, metallography, heat treatment, material characterization</li>
+                            <li>Published 2 research articles, presented at national conferences</li>
+                            <li>Collaborated with Indian Institute of Technology, Madras</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <!-- Publications -->
+    <section id="publications" class="publications-section">
         <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li><i class="fas fa-code"></i> Advanced Materials Engineering</li>
-                <li><i class="fas fa-tools"></i> Additive Manufacturing</li>
-                <li><i class="fas fa-flask"></i> Materials Characterization</li>
-                <li><i class="fas fa-chart-line"></i> Data Analysis</li>
-            </ul>
+            <h2 class="section-title">Recent Publications</h2>
+            <div class="publications-list">
+                <div class="publication-item">
+                    <div class="pub-badge">2024</div>
+                    <h3>Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion</h3>
+                    <p class="pub-authors">Shahadat Hussain, Ali N Alagha, Wael Zaki</p>
+                    <p class="pub-journal">Journal of Materials Engineering and Performance</p>
+                    <a href="https://doi.org/10.1007/s11665-024-09162-7" target="_blank" class="pub-link">View Publication →</a>
+                </div>
+                <div class="publication-item">
+                    <div class="pub-badge">2023</div>
+                    <h3>Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion</h3>
+                    <p class="pub-authors">Shahadat Hussain, Ali N Alagha, Gregory N. Haidemenopoulos, Wael Zaki</p>
+                    <p class="pub-journal">Journal of Manufacturing Processes, 102:375-386</p>
+                    <a href="https://doi.org/10.1016/j.jmapro.2023.07.055" target="_blank" class="pub-link">View Publication →</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="section">
+    <!-- Skills -->
+    <section class="skills-section">
         <div class="container">
-            <h2>Contact</h2>
-            <p><i class="fas fa-map-marker-alt icon"></i> Muroor Road, Abu Dhabi, UAE</p>
-            <p><i class="fas fa-phone icon"></i> +971 50 628 0812</p>
-            <p><i class="fas fa-envelope icon"></i> coding@techie.com</p>
-            <a href="https://www.linkedin.com/in/shahadathussain" target="_blank"><i class="fab fa-linkedin icon"></i></a>
-            <a href="https://sites.google.com/view/shahadathussain" target="_blank"><i class="fas fa-globe icon"></i></a>
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Software & Analysis</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">FreeCAD 0.20</span>
+                        <span class="skill-tag">Python (pandas, numpy)</span>
+                        <span class="skill-tag">MATLAB/Origin Lab</span>
+                        <span class="skill-tag">ImageJ/Gatan Suite</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">Xpert HighScore</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Fabrication & Testing</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Additive Manufacturing</span>
+                        <span class="skill-tag">Laser Powder Bed Fusion</span>
+                        <span class="skill-tag">Vacuum Induction Melting</span>
+                        <span class="skill-tag">Tensile/Compression Testing</span>
+                        <span class="skill-tag">Fatigue Testing (Instron)</span>
+                        <span class="skill-tag">Metallography</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-flask"></i> Characterization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SEM/EDS (JEOL, FEI)</span>
+                        <span class="skill-tag">XRD (Bruker, Rigaku)</span>
+                        <span class="skill-tag">Optical Microscopy</span>
+                        <span class="skill-tag">Differential Scanning Calorimetry</span>
+                        <span class="skill-tag">TEM/AFM</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Khalifa University, Main Campus<br>Abu Dhabi, UAE 127788</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>shahadat_ind@yahoo.com</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p>+971 50 628 0812</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Links</h3>
+                    <div class="contact-links">
+                        <a href="https://sites.google.com/view/shahadathussain" target="_blank">Google Site</a>
+                        <a href="https://linkedin.com/in/shahadathussain" target="_blank">LinkedIn</a>
+                        <a href="assets/resume.pdf" download>Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Shahadat Hussain, PhD. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2024 Dr. Shahadat Hussain. All Rights Reserved.</p>
+            <p class="footer-note">This website is hosted on GitHub Pages | Updated: December 2024</p>
+        </div>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script>
-        $('a.nav-link').on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top - 70
-                }, 800, function(){
-                    window.location.hash = hash;
-                });
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
