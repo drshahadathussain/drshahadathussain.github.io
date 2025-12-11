@@ -11,7 +11,7 @@ Professional research portfolio website for Dr. Shahadat Hussain, showcasing exp
 - Mechanical Testing & Analysis
 
 ## 🚀 Live Website
-[https://yourusername.github.io](https://drshahadathussain.github.io)
+[https://drshahadathussain.github.io](https://drshahadathussain.github.io)
 
 ## 📁 Setup Instructions
 
@@ -70,4 +70,4 @@ MIT License - Feel free to use this template for your own portfolio!
 Dr. Shahadat Hussain
 - Email: shahadat_ind@yahoo.com
 - Phone: +971 50 628 0812
-- LinkedIn: linkedin.com/in/shahadathussain
+- LinkedIn: https://www.linkedin.com/in/shahadathussain
