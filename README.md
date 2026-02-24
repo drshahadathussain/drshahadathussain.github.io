@@ -68,6 +68,5 @@ MIT License - Feel free to use this template for your own portfolio!
 ## 📬 Contact
 
 Dr. Shahadat Hussain
-- Email: shahadat_ind@yahoo.com
-- Phone: +971 50 628 0812
+- Email: contact@shahadathussain.com
 - LinkedIn: https://www.linkedin.com/in/shahadathussain
