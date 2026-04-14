@@ -59,7 +59,21 @@
       "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
       "url": "https://www.rgpv.ac.in"
     },
-     
+     {
+      "@type": "Organization",
+      "name": "University Institute of Technology - Rajiv Gandhi Proudyogiki Vishwavidyalaya (UIT-RGPV)",
+      "url": "https://www.uitrgpv.ac.in"
+    },
+    {
+      "@type": "Organization",
+      "name": "Delhi Public School - Bokaro Steel City (DPS Bokaro)",
+      "url": "https://dpsbokaro.com/dpsn/"
+    },
+     {
+      "@type": "Organization",
+      "name": "Bokaro Public School - Bokaro Steel City (BPS Bokaro)",
+      "url": "https://bokaropublicschool.org"
+    }
   ],
 
   "worksFor": {
