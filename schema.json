@@ -1,9 +1,11 @@
 {
   "@context": "https://schema.org",
   "@type": "Person",
-  "additionalType": "Researcher",
-  "additionalType": "Engineer",
-  "additionalType": "Scientist",
+  "additionalType": [
+  "https://schema.org/Researcher",
+  "https://schema.org/Engineer",
+  "https://schema.org/Scientist"
+],
   "@id": "https://www.shahadathussain.com/#person",
 
   "name": "Shahadat Hussain",
