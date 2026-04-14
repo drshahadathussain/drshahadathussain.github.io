@@ -19,6 +19,35 @@
   "jobTitle": "Postdoctoral Researcher in Additive Manufacturing and Advanced Materials",
   "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing (3D Printing), Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science. He has published in peer-reviewed journals and contributes to open knowledge platforms.",
 
+  
+{
+  "@type": "EducationalOccupationalCredential",
+  "name": "IBM Data Science Professional Certificate",
+  "url": "https://www.coursera.org/account/accomplishments/professional-cert/4R8YJ5YWQ0NH",
+  "credentialCategory": {
+    "@type": "DefinedTerm",
+    "name": "Professional Certificate",
+    "termCode": "certification"
+  },
+  "description": "Comprehensive 12-course program covering data science methodology, Python, SQL, data visualization with Pandas, machine learning, and applied data science capstone.",
+  "recognizedBy": {
+    "@type": "Organization",
+    "name": "IBM",
+    "url": "https://www.ibm.com",
+    "sameAs": "https://www.wikidata.org/wiki/Q37156"
+  },
+  "datePublished": "2025-08-23",
+  "competencyRequired": [
+    "Python Programming",
+    "Data Analysis",
+    "Machine Learning",
+    "SQL",
+    "Data Visualization"
+  ],
+  "educationalLevel": "Advanced Professional"
+},
+
+
   "affiliation": [
     {
       "@type": "Organization",
@@ -82,6 +111,7 @@
     "url": "https://nyuad.nyu.edu"
   },
 
+  
   "knowsAbout": [
     {
       "@type": "DefinedTerm",
