@@ -30,6 +30,21 @@
       "name": "Khalifa University",
       "url": "https://www.ku.ac.ae",
       "sameAs": "https://www.ku.ac.ae/college-people/shahadat-hussain"
+    },
+    {
+      "@type": "Organization",
+      "name": "Council of Scientific and Industrial Research (CSIR)",
+      "url": "https://www.csir.res.in"
+    },
+    {
+      "@type": "Organization",
+      "name": "Advanced Materials and Processes Research Institute (AMPRI)",
+      "url": "https://ampri.res.in/en/"
+    },
+     {
+      "@type": "Organization",
+      "name": "Oriental Group of Institutes (OCT)",
+      "url": "https://oriental.ac.in"
     }
   ],
 
@@ -38,7 +53,13 @@
       "@type": "Organization",
       "name": "Academy of Scientific and Innovative Research (AcSIR)",
       "url": "https://acsir.res.in"
-    }
+    },
+    {
+      "@type": "Organization",
+      "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+      "url": "https://www.rgpv.ac.in"
+    },
+     
   ],
 
   "worksFor": {
