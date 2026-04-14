@@ -1,0 +1,281 @@
+{
+  "@context": "https://schema.org",
+  "@type": ["Person", "Researcher"],
+  "@id": "https://www.shahadathussain.com/#person",
+
+  "name": "Shahadat Hussain",
+  "honorificPrefix": "Dr.",
+  "givenName": "Shahadat",
+  "familyName": "Hussain",
+  "alternateName": ["Dr. Shahadat Hussain", "Shahadat Hussain PhD"],
+
+  "url": "https://www.shahadathussain.com",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Shahadat_Hussain.png",
+    "caption": "Dr. Shahadat Hussain – Researcher in Additive Manufacturing and Materials Science"
+  },
+
+  "jobTitle": "Postdoctoral Researcher in Additive Manufacturing and Advanced Materials",
+  "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing (3D Printing), Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science. He has published in peer-reviewed journals and contributes to open knowledge platforms.",
+
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "New York University Abu Dhabi",
+      "url": "https://nyuad.nyu.edu"
+    },
+    {
+      "@type": "Organization",
+      "name": "Khalifa University",
+      "url": "https://www.ku.ac.ae",
+      "sameAs": "https://www.ku.ac.ae/college-people/shahadat-hussain"
+    }
+  ],
+
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Academy of Scientific and Innovative Research (AcSIR)",
+      "url": "https://acsir.res.in"
+    }
+  ],
+
+  "worksFor": {
+    "@type": "Organization",
+    "name": "New York University Abu Dhabi",
+    "url": "https://nyuad.nyu.edu"
+  },
+
+  "knowsAbout": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Additive Manufacturing",
+      "url": "https://en.wikipedia.org/wiki/3D_printing"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Metamaterials",
+      "url": "https://en.wikipedia.org/wiki/Metamaterial"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "TPMS Lattice Structures",
+      "url": "https://en.wikipedia.org/wiki/Triply_periodic_minimal_surface"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Shape Memory Alloys",
+      "url": "https://en.wikipedia.org/wiki/Shape-memory_alloy"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Materials Characterization",
+      "url": "https://en.wikipedia.org/wiki/Materials_characterization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Data Science",
+      "url": "https://en.wikipedia.org/wiki/Data_science"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Scientific Computing",
+      "url": "https://en.wikipedia.org/wiki/Computational_science"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Knowledge Graphs",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_graph"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Mechanical Engineering",
+      "url": "https://en.wikipedia.org/wiki/Mechanical_engineering"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Laser Powder Bed Fusion",
+      "url": "https://en.wikipedia.org/wiki/Selective_laser_melting"
+    }
+  ],
+
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "name": "ORCID",
+      "value": "0000-0002-4355-2169",
+      "url": "https://orcid.org/0000-0002-4355-2169"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ISNI",
+      "name": "ISNI",
+      "value": "0000000530207229",
+      "url": "https://isni.org/isni/0000000530207229"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Scopus Author ID",
+      "name": "Scopus Author ID",
+      "value": "56380929800",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=56380929800"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Web of Science ResearcherID",
+      "name": "Web of Science ResearcherID",
+      "value": "I-3091-2017",
+      "url": "https://www.webofscience.com/wos/author/record/I-3091-2017"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Google Scholar ID",
+      "name": "Google Scholar ID",
+      "value": "tQNSWaAAAAAJ",
+      "url": "https://scholar.google.com/citations?user=tQNSWaAAAAAJ"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Semantic Scholar Author ID",
+      "name": "Semantic Scholar Author ID",
+      "value": "2048939917",
+      "url": "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Wikidata QID",
+      "name": "Wikidata QID",
+      "value": "Q138333037",
+      "url": "https://www.wikidata.org/wiki/Q138333037"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "OpenAlex Author ID",
+      "name": "OpenAlex Author ID",
+      "value": "A5063248081",
+      "url": "https://openalex.org/authors/a5063248081"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Dimensions Author ID",
+      "name": "Dimensions Author ID",
+      "value": "ur.010333436632.76",
+      "url": "https://app.dimensions.ai/details/entities/publication/author/ur.010333436632.76"
+    }
+  ],
+
+  "email": [
+    "contact@shahadathussain.com",
+    "sxxxxxxx@yahoo.com"
+  ],
+
+  "telephone": "+971xxxxxxx",
+
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE",
+      "addressRegion": "Abu Dhabi Emirate"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Bokaro Steel City",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  ],
+
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "professional inquiry",
+      "email": "contact@shahadathussain.com",
+      "telephone": "+971xxxxxxx",
+      "url": "https://www.shahadathussain.com/contact",
+      "availableLanguage": ["English", "Hindi", "Urdu"]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "personal",
+      "email": "sxxxxx@yahoo.com"
+    }
+  ],
+
+  "mainEntityOfPage": {
+    "@type": "ProfilePage",
+    "@id": "https://www.shahadathussain.com",
+    "name": "Shahadat Hussain – Official Website",
+    "url": "https://www.shahadathussain.com"
+  },
+
+  "sameAs": [
+
+    "https://www.wikidata.org/wiki/Q138333037",
+    "https://commons.wikimedia.org/wiki/User:ShahadatHussain",
+    "https://www.wikidata.org/wiki/User:ShahadatHussain",
+
+    "https://orcid.org/0000-0002-4355-2169",
+    "https://isni.org/isni/0000000530207229",
+    "https://www.scopus.com/authid/detail.uri?authorId=56380929800",
+    "https://www.webofscience.com/wos/author/record/I-3091-2017",
+    "https://scholar.google.com/citations?user=tQNSWaAAAAAJ",
+    "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917",
+    "https://openalex.org/authors/a5063248081",
+    "https://app.dimensions.ai/details/entities/publication/author/ur.010333436632.76",
+
+    "https://www.researchgate.net/profile/Shahadat-Hussain",
+    "https://nyuad.academia.edu/ShahadatHussainPhD",
+    "https://loop.frontiersin.org/people/3469862/overview",
+    "https://link.springer.com/researchers/47794963SN",
+    "https://scispace.com/authors/shahadat-hussain-25r0rrjv2w",
+    "https://sciprofiles.com/profile/shahadathussain",
+    "https://www.scilit.com/scholars/17347209",
+    "https://scholia.toolforge.org/author/Q138333037",
+
+    "https://www.linkedin.com/in/shahadathussain",
+    "https://twitter.com/enggshahadat",
+    "https://github.com/drshahadathussain",
+    "https://www.youtube.com/@drshahadathussain",
+    "https://medium.com/@drshahadathussain",
+    "https://www.instagram.com/drshahadathussain",
+    "https://www.facebook.com/shahadathussain.sh",
+    "https://bsky.app/profile/shahadathussain.bsky.social",
+    "https://www.threads.com/@drshahadathussain",
+    "https://www.reddit.com/user/hussainshahadat",
+    "https://www.quora.com/profile/Shahadat-Hussain-3",
+
+    "https://www.kaggle.com/drshahadathussain",
+    "https://github.com/shahadat-hussain",
+    "https://stackoverflow.com/users/31488305/shahadathussain",
+    "https://gitlab.com/shahadathussain",
+    "https://replit.com/@shahadathussain",
+    "https://leetcode.com/u/drshahadathussain/",
+    "https://www.hackerrank.com/profile/shahadathussain",
+    "https://www.codewars.com/users/shahadathussain",
+    "https://www.codecademy.com/profiles/shahadathussain",
+    "https://www.freecodecamp.org/shahadathussain",
+
+    "https://drshahadathussain.substack.com",
+    "https://substack.com/@drshahadathussain",
+    "https://www.goodreads.com/user/show/174352300-shahadat-hussain",
+    "https://www.slideshare.net/ShahadatHussain9",
+    "https://www.credly.com/users/shahadathussain",
+
+    "https://linktr.ee/drshahadathussain",
+    "https://beacons.ai/shahadathussain",
+    "https://about.me/shahadat.hussain",
+    "https://gravatar.com/drshahadathussain",
+    "https://featured.com/p/shahadat-hussain",
+    "https://app.qwoted.com/sources/shahadat-hussain",
+    "https://grokipedia.com/page/Shahadat_Hussain",
+
+    "https://www.ku.ac.ae/college-people/shahadat-hussain",
+    "https://www.coursera.org/learner/shahadathussain",
+    "https://drshahadathussain.github.io",
+    "https://drshahadathussain.wordpress.com",
+    "https://sites.google.com/view/drshahadathussain"
+  ]
+}
