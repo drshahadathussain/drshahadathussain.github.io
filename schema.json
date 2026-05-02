@@ -20,7 +20,23 @@
     "url": "https://commons.wikimedia.org/wiki/File:Shahadat_Hussain.png",
     "caption": "Dr. Shahadat Hussain – Researcher in Additive Manufacturing and Materials Science"
   },
-
+ "workExample": {
+  "@type": "Thesis",
+  "@id": "http://hdl.handle.net/10603/384933",
+  "name": "Effect of alloying, grain refiners and processing on properties and shape memory behaviours of Cu-Al-Ni based alloys for high temperature applications",
+  "abstract": "The study attempts to overcome the inherent brittleness...",
+  "inLanguage": "English",
+  "author": { "@id": "https://www.shahadathussain.com/#person" },
+  "datePublished": "2019",
+  "learningResourceType": "Thesis",
+  "educationalLevel": "Doctorate (PhD)",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academy of Scientific and Innovative Research (AcSIR)",
+    "sameAs": "https://acsir.res.in"
+  },
+  "url": "http://hdl.handle.net/10603/384933"
+},
   "jobTitle": "Postdoctoral Researcher in Additive Manufacturing and Advanced Materials",
   "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing (3D Printing), Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science. He has published in peer-reviewed journals and contributes to open knowledge platforms.",
 
