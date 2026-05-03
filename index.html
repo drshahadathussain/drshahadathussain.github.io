@@ -1055,13 +1055,7 @@
             document.getElementById(target)?.classList.add('active-pane');
         });
     });
-    // CV download stub (linking resume awareness)
-    const cvBtn = document.getElementById('downloadCVbtn');
-    if(cvBtn) cvBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert("CV download ready: Shahadat_Resume.pdf (simulated) – please upload actual PDF to root as Shahadat_Resume.pdf");
-        // For production you would link real file
-    });
+    
     // image placeholder can be replaced by actual file: replace src if needed
     const img = document.getElementById('profileImage');
     if(img && img.src.includes('placeholder')) img.src = "https://ui-avatars.com/api/?background=1f6e8c&color=fff&bold=true&size=250&name=Shahadat+Hussain";
