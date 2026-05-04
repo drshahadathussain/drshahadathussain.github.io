@@ -407,4 +407,25 @@
     "https://twitter.com/enggshahadat",
     "https://instagram.com/drshahadathussain"
 ]
+},
+{
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1007/s11665-024-09162-7",
+      "headline": "Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion",
+      "author": { "@id": "https://www.shahadathussain.com/#person" },
+      "datePublished": "2024",
+      "publisher": { "@type": "Organization", "name": "Journal of Materials Engineering and Performance" },
+      "url": "https://doi.org/10.1007/s11665-024-09162-7"
+    },
+
+{
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1016/j.matdes.2021.109654",
+      "headline": "Additive manufacturing of shape memory alloys: A review with emphasis on powder bed systems",
+      "author": { "@id": "https://www.shahadathussain.com/#person" },
+      "datePublished": "2021",
+      "publisher": { "@type": "Organization", "name": "Materials and Design" },
+      "url": "https://doi.org/10.1016/j.matdes.2021.109654"
+    }
+  ]
 }
