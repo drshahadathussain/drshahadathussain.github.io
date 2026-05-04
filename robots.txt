@@ -1,0 +1,13 @@
+# robots.txt for Dr. Shahadat Hussain
+# https://drshahadathussain.github.io
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://drshahadathussain.github.io/sitemap.xml
+
+# Optional: Prevent crawling of unnecessary files
+Disallow: /assets/
+Disallow: /*.json$
+Disallow: /schema.json
