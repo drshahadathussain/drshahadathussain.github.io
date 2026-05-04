@@ -158,6 +158,11 @@
     },
     {
       "@type": "DefinedTerm",
+      "name": "Mechanical Testing",
+      "url": "https://en.wikipedia.org/wiki/Mechanical_testing"
+    },
+    {
+      "@type": "DefinedTerm",
       "name": "Data Science",
       "url": "https://en.wikipedia.org/wiki/Data_science"
     },
@@ -175,6 +180,21 @@
       "@type": "DefinedTerm",
       "name": "Mechanical Engineering",
       "url": "https://en.wikipedia.org/wiki/Mechanical_engineering"
+    },
+      {
+      "@type": "DefinedTerm",
+      "name": "Machine Learning",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning"
+    },
+      {
+      "@type": "DefinedTerm",
+      "name": "Deep Learning",
+      "url": "https://en.wikipedia.org/wiki/Deep_learning"
+    },
+      {
+      "@type": "DefinedTerm",
+      "name": "Artificial Intelligence",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
     },
     {
       "@type": "DefinedTerm",
