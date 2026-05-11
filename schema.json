@@ -89,7 +89,8 @@
     {
       "@type": "Organization",
       "name": "New York University Abu Dhabi",
-      "url": "https://nyuad.nyu.edu"
+      "url": "https://nyuad.nyu.edu",
+      "sameAs": "https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html"
     },
     {
       "@type": "Organization",
