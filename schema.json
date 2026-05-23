@@ -24,11 +24,11 @@
     "caption": "Dr. Shahadat Hussain – Researcher in Additive Manufacturing and Materials Science"
   },
 
-  "jobTitle": "Postdoctoral Researcher in Additive Manufacturing and Advanced Materials",
+  "jobTitle": "Research Associate in Additive Manufacturing and Advanced Materials",
   "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing (3D Printing), Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science. He has published in peer-reviewed journals and contributes to open knowledge platforms.",
 
-  "workExample": [
-    {
+  "subjectOf": [
+	{
       "@type": "Thesis",
       "@id": "http://hdl.handle.net/10603/384933",
       "name": "Effect of alloying, grain refiners and processing on properties and shape memory behaviours of Cu-Al-Ni based alloys for high temperature applications",
@@ -46,10 +46,7 @@
         "sameAs": "https://acsir.res.in"
       },
       "url": "http://hdl.handle.net/10603/384933"
-    }
-  ],
-
-  "subjectOf": [
+    },
     {
       "@type": "NewsArticle",
       "headline": "Result relief in coal capital",
@@ -402,7 +399,7 @@
     "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10385776",
     "https://scixplorer.org/public-libraries/URuNK_yHRjq9eKIr7zrZZA",
     "https://scholargps.com/scholars/80706971012987/shahadat-hussain",
-    
+
     "https://www.ku.ac.ae/college-people/shahadat-hussain",
     "https://www.coursera.org/learner/shahadathussain",
     "https://featured.com/p/shahadat-hussain",
@@ -412,7 +409,7 @@
     "https://commons.wikimedia.org/wiki/User:ShahadatHussain",
     "https://reasonator.toolforge.org/?q=Q138333037&lang=en",
     "https://encyclopedia.pub/entry/59711",
-    
+
     "https://github.com/drshahadathussain",
     "https://drshahadathussain.github.io",
     "https://github.com/shahadat-hussain",
@@ -429,13 +426,13 @@
     "https://shahadathussain.pages.dev",
     "https://drshahadathussain.pages.dev",
     "https://www.mathworks.com/matlabcentral/profile/authors/37406014/",
-    
+
     "https://figshare.com/authors/Shahadat_Hussain/23840619",
     "https://osf.io/wa39u/",
     "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Hussain%2C+Shahadat%22",
-    
+
     "https://cv.hal.science/shahadathussain",
-    
+
     "https://about.me/shahadat.hussain",
     "https://dr-shahadathussain.blogspot.com",
     "https://shahadathussain.carrd.co",
@@ -463,7 +460,7 @@
     "https://drshahadathussain.webflow.io",
     "https://www.goodreads.com/user/show/174352300-shahadat-hussain",
     "https://drshahadathussain.substack.com",
-    
+
     "https://www.youtube.com/@drshahadathussain",
     "https://medium.com/@drshahadathussain",
     "https://substack.com/@drshahadathussain",
@@ -472,7 +469,7 @@
     "https://shahadathussain.my.canva.site",
     "https://www.slideshare.net/ShahadatHussain9",
     "https://theconversation.com/profiles/shahadat-hussain-2674576",
-    
+
     "https://bsky.app/profile/shahadathussain.bsky.social",
     "https://www.reddit.com/user/hussainshahadat",
     "https://www.threads.com/@drshahadathussain",
