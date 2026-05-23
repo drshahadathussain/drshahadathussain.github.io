@@ -1,0 +1,469 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "additionalType": [
+  "https://schema.org/Researcher",
+  "https://schema.org/Engineer",
+  "https://schema.org/Scientist"
+],
+  "@id": "https://www.shahadathussain.com/#person",
+
+  "name": "Shahadat Hussain",
+  "honorificPrefix": "Dr.",
+  "givenName": "Shahadat",
+  "familyName": "Hussain",
+  "alternateName": ["Dr. Shahadat Hussain", "Shahadat Hussain PhD"],
+
+  "url": "https://www.shahadathussain.com",
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://commons.wikimedia.org/wiki/File:Shahadat_Hussain.png",
+    "caption": "Dr. Shahadat Hussain – Researcher in Additive Manufacturing and Materials Science"
+  },
+
+"workExample": {
+  "@type": "Thesis",
+  "@id": "http://hdl.handle.net/10603/384933",
+  "name": "Effect of alloying, grain refiners and processing on properties and shape memory behaviours of Cu-Al-Ni based alloys for high temperature applications",
+  "abstract": "The study attempts to overcome the inherent brittleness...",
+  "inLanguage": "English",
+  "author": { "@id": "https://www.shahadathussain.com/#person" },
+  "datePublished": "2019",
+  "learningResourceType": "Thesis",
+  "educationalLevel": "Doctorate (PhD)",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Academy of Scientific and Innovative Research (AcSIR)",
+    "sameAs": "https://acsir.res.in"
+  },
+  "url": "http://hdl.handle.net/10603/384933"
+},
+  
+"subjectOf": {
+    "@type": "NewsArticle",
+    "headline": "Result relief in coal capital",
+    "url": "https://www.telegraphindia.com/jharkhand/result-relief-in-coal-capital/cid/878724",
+    "publisher": {
+      "@type": "Organization",
+      "name": "The Telegraph India"
+    },
+    "description": "Media coverage discussing academic excellence in the Coal Capital and Bokaro region. Shahadat Hussain is a class Xth topper from Bokaro Public School, ICSE Board, 2005, Bokaro Steel City, Jharkhand, India."
+  },
+  "sameAs": [
+    "https://orcid.org/0000-0005-3020-7229",
+    "https://www.telegraphindia.com/jharkhand/result-relief-in-coal-capital/cid/878724"
+  ]
+},
+  
+  "jobTitle": "Postdoctoral Researcher in Additive Manufacturing and Advanced Materials",
+  "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing (3D Printing), Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science. He has published in peer-reviewed journals and contributes to open knowledge platforms.",
+
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "IBM Data Science Professional Certificate",
+    "url": "https://www.coursera.org/account/accomplishments/professional-cert/4R8YJ5YWQ0NH",
+    "credentialCategory": {
+      "@type": "DefinedTerm",
+      "name": "Professional Certificate",
+      "termCode": "certification"
+    },
+    "description": "Comprehensive 12-course program covering data science methodology, Python, SQL, data visualization with Pandas, machine learning, and applied data science capstone.",
+    "recognizedBy": {
+      "@type": "Organization",
+      "name": "IBM",
+      "url": "https://www.ibm.com",
+      "sameAs": "https://www.wikidata.org/wiki/Q37156"
+    },
+    "datePublished": "2025-08-23",
+    "competencyRequired": [
+      "Python Programming",
+      "Data Analysis",
+      "Machine Learning",
+      "SQL",
+      "Data Visualization"
+    ],
+    "educationalLevel": "Advanced Professional"
+  },
+
+  "affiliation": [
+    {
+      "@type": "Organization",
+      "name": "New York University Abu Dhabi",
+      "url": "https://nyuad.nyu.edu",
+      "sameAs": "https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html"
+    },
+    {
+      "@type": "Organization",
+      "name": "Khalifa University",
+      "url": "https://www.ku.ac.ae",
+      "sameAs": "https://www.ku.ac.ae/college-people/shahadat-hussain"
+    },
+    {
+      "@type": "Organization",
+      "name": "Council of Scientific and Industrial Research (CSIR)",
+      "url": "https://www.csir.res.in"
+    },
+    {
+      "@type": "Organization",
+      "name": "Advanced Materials and Processes Research Institute (AMPRI)",
+      "url": "https://ampri.res.in/en/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Oriental Group of Institutes (OCT)",
+      "url": "https://oriental.ac.in"
+    }
+  ],
+
+  "alumniOf": [
+    {
+      "@type": "Organization",
+      "name": "Academy of Scientific and Innovative Research (AcSIR)",
+      "url": "https://acsir.res.in"
+    },
+    {
+      "@type": "Organization",
+      "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+      "url": "https://www.rgpv.ac.in"
+    },
+    {
+      "@type": "Organization",
+      "name": "University Institute of Technology - Rajiv Gandhi Proudyogiki Vishwavidyalaya (UIT-RGPV)",
+      "url": "https://www.uitrgpv.ac.in"
+    },
+    {
+      "@type": "Organization",
+      "name": "Delhi Public School - Bokaro Steel City (DPS Bokaro)",
+      "url": "https://dpsbokaro.com/dpsn/"
+    },
+    {
+      "@type": "Organization",
+      "name": "Bokaro Public School - Bokaro Steel City (BPS Bokaro)",
+      "url": "https://bokaropublicschool.org"
+    }
+  ],
+
+  "worksFor": {
+    "@type": "Organization",
+    "name": "New York University Abu Dhabi",
+    "url": "https://nyuad.nyu.edu"
+  },
+
+  "knowsAbout": [
+    {
+      "@type": "DefinedTerm",
+      "name": "Additive Manufacturing",
+      "url": "https://en.wikipedia.org/wiki/3D_printing"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Metamaterials",
+      "url": "https://en.wikipedia.org/wiki/Metamaterial"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "TPMS Lattice Structures",
+      "url": "https://en.wikipedia.org/wiki/Triply_periodic_minimal_surface"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Shape Memory Alloys",
+      "url": "https://en.wikipedia.org/wiki/Shape-memory_alloy"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Materials Characterization",
+      "url": "https://en.wikipedia.org/wiki/Materials_characterization"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Mechanical Testing",
+      "url": "https://en.wikipedia.org/wiki/Mechanical_testing"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Data Science",
+      "url": "https://en.wikipedia.org/wiki/Data_science"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Scientific Computing",
+      "url": "https://en.wikipedia.org/wiki/Computational_science"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Knowledge Graphs",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_graph"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Mechanical Engineering",
+      "url": "https://en.wikipedia.org/wiki/Mechanical_engineering"
+    },
+      {
+      "@type": "DefinedTerm",
+      "name": "Machine Learning",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning"
+    },
+      {
+      "@type": "DefinedTerm",
+      "name": "Deep Learning",
+      "url": "https://en.wikipedia.org/wiki/Deep_learning"
+    },
+      {
+      "@type": "DefinedTerm",
+      "name": "Artificial Intelligence",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
+    },
+    {
+      "@type": "DefinedTerm",
+      "name": "Laser Powder Bed Fusion",
+      "url": "https://en.wikipedia.org/wiki/Selective_laser_melting"
+    }
+  ],
+
+
+  "identifier": [
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ORCID",
+      "name": "ORCID",
+      "value": "0000-0002-4355-2169",
+      "url": "https://orcid.org/0000-0002-4355-2169"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "ISNI",
+      "name": "ISNI",
+      "value": "0000000530207229",
+      "url": "https://isni.org/isni/0000000530207229"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Scopus Author ID",
+      "name": "Scopus Author ID",
+      "value": "56380929800",
+      "url": "https://www.scopus.com/authid/detail.uri?authorId=56380929800"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Web of Science ResearcherID",
+      "name": "Web of Science ResearcherID",
+      "value": "I-3091-2017",
+      "url": "https://www.webofscience.com/wos/author/record/I-3091-2017"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Google Scholar ID",
+      "name": "Google Scholar ID",
+      "value": "tQNSWaAAAAAJ",
+      "url": "https://scholar.google.com/citations?user=tQNSWaAAAAAJ"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Semantic Scholar Author ID",
+      "name": "Semantic Scholar Author ID",
+      "value": "2048939917",
+      "url": "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Wikidata QID",
+      "name": "Wikidata QID",
+      "value": "Q138333037",
+      "url": "https://www.wikidata.org/wiki/Q138333037"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "OpenAlex Author ID",
+      "name": "OpenAlex Author ID",
+      "value": "A5063248081",
+      "url": "https://openalex.org/authors/a5063248081"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "GND ID - German National Library (Deutsche Nationalbibliothek, or DNB)",
+      "name": "GND ID",
+      "value": "1397994843",
+      "url": "https://explore.gnd.network/gnd/1397994843"
+    },
+    {
+      "@type": "PropertyValue",
+      "propertyID": "Dimensions Author ID",
+      "name": "Dimensions Author ID",
+      "value": "ur.010333436632.76",
+      "url": "https://app.dimensions.ai/details/entities/publication/author/ur.010333436632.76"
+    }
+  ],
+
+  "email": [
+    "contact@shahadathussain.com",
+    "shahadat.hussain@nyu.edu"
+  ],
+
+  "telephone": "+971xxxxxxx",
+
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Abu Dhabi",
+      "addressCountry": "AE",
+      "addressRegion": "Abu Dhabi Emirate"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Bokaro Steel City",
+      "addressRegion": "Jharkhand",
+      "addressCountry": "IN"
+    }
+  ],
+
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "professional inquiry",
+      "email": "contact@shahadathussain.com",
+      "telephone": "+971xxxxxxx",
+      "url": "https://www.shahadathussain.com/contact",
+      "availableLanguage": ["English", "Hindi", "Urdu"]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "personal",
+      "email": "sxxxxx@yahoo.com"
+    }
+  ],
+
+  "mainEntityOfPage": {
+    "@type": "ProfilePage",
+    "@id": "https://www.shahadathussain.com",
+    "name": "Shahadat Hussain – Official Website",
+    "url": "https://www.shahadathussain.com"
+  },
+
+  "sameAs": [
+    "https://www.shahadathussain.com",
+    "https://www.google.com/search?kgmid=/g/11y_zfqjp8",
+    "https://orcid.org/0000-0002-4355-2169",
+    "https://isni.org/isni/0000000530207229",
+    "https://scholar.google.com/citations?user=tQNSWaAAAAAJ&hl",
+    "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917",
+    "https://www.linkedin.com/in/shahadathussain",
+    "https://www.wikidata.org/wiki/Q138333037",
+    "https://www.researchgate.net/profile/Shahadat-Hussain",
+    "https://nyuad.academia.edu/ShahadatHussainPhD",
+    "https://www.scopus.com/authid/detail.uri?authorId=56380929800",
+    "https://www.webofscience.com/wos/author/record/I-3091-2017",
+    "https://link.springer.com/researchers/47794963SN",
+    "https://scispace.com/authors/shahadat-hussain-25r0rrjv2w",
+    "https://sciprofiles.com/profile/shahadathussain",
+    "https://www.scilit.com/scholars/17347209",
+    "https://scholia.toolforge.org/author/Q138333037",
+    "https://openalex.org/authors/a5063248081",
+    "https://app.dimensions.ai/details/entities/publication/author/ur.010333436632.76",
+    "https://loop.frontiersin.org/people/3499867/overview",
+    "https://commons.datacite.org/orcid.org/0000-0002-4355-2169",
+    "https://www.scienceopen.com/user/shahadathussain",
+    "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10385776",
+    "https://scixplorer.org/public-libraries/URuNK_yHRjq9eKIr7zrZZA",
+    "https://scholargps.com/scholars/80706971012987/shahadat-hussain",
+   
+    "https://www.ku.ac.ae/college-people/shahadat-hussain",
+    "https://www.coursera.org/learner/shahadathussain",
+    "https://featured.com/p/shahadat-hussain",
+    "https://app.qwoted.com/sources/shahadat-hussain",
+    "https://grokipedia.com/page/Shahadat_Hussain",
+    "https://www.wikidata.org/wiki/User:ShahadatHussain",
+    "https://commons.wikimedia.org/wiki/User:ShahadatHussain",
+    "https://reasonator.toolforge.org/?q=Q138333037&lang=en",
+    "https://encyclopedia.pub/entry/59711",
+    
+    "https://github.com/drshahadathussain",    
+    "https://drshahadathussain.github.io",
+    "https://github.com/shahadat-hussain",
+    "https://shahadat-hussain.github.io",
+    "https://gitlab.com/shahadathussain",
+    "https://www.kaggle.com/drshahadathussain",
+    "https://www.freecodecamp.org/shahadathussain",
+    "https://leetcode.com/u/drshahadathussain/",
+    "https://www.hackerrank.com/profile/shahadathussain",
+    "https://www.codewars.com/users/shahadathussain",
+    "https://stackoverflow.com/users/31488305/shahadathussain",
+    "https://www.codecademy.com/profiles/shahadathussain",
+    "https://replit.com/@shahadathussain",
+    "https://shahadathussain.pages.dev",
+    "https://drshahadathussain.pages.dev",
+    "https://www.mathworks.com/matlabcentral/profile/authors/37406014/",
+
+    "https://figshare.com/authors/Shahadat_Hussain/23840619",
+    "https://osf.io/wa39u/",
+    "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Hussain%2C+Shahadat%22",
+
+    "https://cv.hal.science/shahadathussain",
+    
+    "https://about.me/shahadat.hussain",
+    "https://dr-shahadathussain.blogspot.com",
+    "https://shahadathussain.carrd.co",
+    "https://drhussain.carrd.co",
+    "https://drshahadat.carrd.co",
+    "https://linktr.ee/drshahadathussain",
+    "https://beacons.ai/shahadathussain",
+    "https://lnk.bio/shahadathussain",
+    "https://msha.ke/shahadathussain",
+    "https://solo.to/shahadathussain",
+    "https://campsite.bio/shahadathussain",
+    "https://shahadathussain.start.page",
+    "https://drshahadathussain.faculty.bio",
+    "https://shahadathussain.owlstown.net",
+    "https://drshahadathussain.wordpress.com",
+    "https://gravatar.com/drshahadathussain",
+    "https://gravatar.com/enggshahadat",
+    "https://gravatar.com/engghussain",
+    "https://sites.google.com/view/hussainshahadat",
+    "https://sites.google.com/view/drshahadathussain",
+    "https://drshahadathussain.wixsite.com/shahadathussain",
+    "https://shahadathussain.framer.ai",
+    "https://drshahadathussain.framer.ai",
+    "https://hussainshahadat.framer.ai",
+    "https://drshahadathussain.webflow.io",
+    "https://www.goodreads.com/user/show/174352300-shahadat-hussain",
+    "https://drshahadathussain.substack.com",
+    
+    "https://www.youtube.com/@drshahadathussain",
+    "https://medium.com/@drshahadathussain",
+    "https://substack.com/@drshahadathussain",
+    "https://www.credly.com/users/shahadathussain",
+    "https://www.quora.com/profile/Shahadat-Hussain-3",
+    "https://shahadathussain.my.canva.site",
+    "https://www.slideshare.net/ShahadatHussain9",
+    "https://theconversation.com/profiles/shahadat-hussain-2674576",
+
+    "https://bsky.app/profile/shahadathussain.bsky.social",
+    "https://www.reddit.com/user/hussainshahadat",
+    "https://www.threads.com/@drshahadathussain",
+    "https://www.facebook.com/shahadathussain.sh",
+    "https://twitter.com/enggshahadat",
+    "https://instagram.com/drshahadathussain"
+]
+},
+{
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1007/s11665-024-09162-7",
+      "headline": "Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion",
+      "author": { "@id": "https://www.shahadathussain.com/#person" },
+      "datePublished": "2024",
+      "publisher": { "@type": "Organization", "name": "Journal of Materials Engineering and Performance" },
+      "url": "https://doi.org/10.1007/s11665-024-09162-7"
+    },
+
+{
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1016/j.matdes.2021.109654",
+      "headline": "Additive manufacturing of shape memory alloys: A review with emphasis on powder bed systems",
+      "author": { "@id": "https://www.shahadathussain.com/#person" },
+      "datePublished": "2021",
+      "publisher": { "@type": "Organization", "name": "Materials and Design" },
+      "url": "https://doi.org/10.1016/j.matdes.2021.109654"
+    }
+  ]
+}
