@@ -2,17 +2,20 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "additionalType": [
-  "https://schema.org/Researcher",
-  "https://schema.org/Engineer",
-  "https://schema.org/Scientist"
-],
+    "https://schema.org/Researcher",
+    "https://schema.org/Engineer",
+    "https://schema.org/Scientist"
+  ],
   "@id": "https://www.shahadathussain.com/#person",
 
   "name": "Shahadat Hussain",
   "honorificPrefix": "Dr.",
   "givenName": "Shahadat",
   "familyName": "Hussain",
-  "alternateName": ["Dr. Shahadat Hussain", "Shahadat Hussain PhD"],
+  "alternateName": [
+    "Dr. Shahadat Hussain",
+    "Shahadat Hussain PhD"
+  ],
 
   "url": "https://www.shahadathussain.com",
   "image": {
@@ -21,42 +24,71 @@
     "caption": "Dr. Shahadat Hussain – Researcher in Additive Manufacturing and Materials Science"
   },
 
-"workExample": {
-  "@type": "Thesis",
-  "@id": "http://hdl.handle.net/10603/384933",
-  "name": "Effect of alloying, grain refiners and processing on properties and shape memory behaviours of Cu-Al-Ni based alloys for high temperature applications",
-  "abstract": "The study attempts to overcome the inherent brittleness...",
-  "inLanguage": "English",
-  "author": { "@id": "https://www.shahadathussain.com/#person" },
-  "datePublished": "2019",
-  "learningResourceType": "Thesis",
-  "educationalLevel": "Doctorate (PhD)",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Academy of Scientific and Innovative Research (AcSIR)",
-    "sameAs": "https://acsir.res.in"
-  },
-  "url": "http://hdl.handle.net/10603/384933"
-},
-  
-"subjectOf": {
-    "@type": "NewsArticle",
-    "headline": "Result relief in coal capital",
-    "url": "https://www.telegraphindia.com/jharkhand/result-relief-in-coal-capital/cid/878724",
-    "publisher": {
-      "@type": "Organization",
-      "name": "The Telegraph India"
-    },
-    "description": "Media coverage discussing academic excellence in the Coal Capital and Bokaro region. Shahadat Hussain is a class Xth topper from Bokaro Public School, ICSE Board, 2005, Bokaro Steel City, Jharkhand, India."
-  },
-  "sameAs": [
-    "https://orcid.org/0000-0005-3020-7229",
-    "https://www.telegraphindia.com/jharkhand/result-relief-in-coal-capital/cid/878724"
-  ]
-},
-  
   "jobTitle": "Postdoctoral Researcher in Additive Manufacturing and Advanced Materials",
   "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing (3D Printing), Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science. He has published in peer-reviewed journals and contributes to open knowledge platforms.",
+
+  "workExample": [
+    {
+      "@type": "Thesis",
+      "@id": "http://hdl.handle.net/10603/384933",
+      "name": "Effect of alloying, grain refiners and processing on properties and shape memory behaviours of Cu-Al-Ni based alloys for high temperature applications",
+      "abstract": "The study attempts to overcome the inherent brittleness...",
+      "inLanguage": "English",
+      "author": {
+        "@id": "https://www.shahadathussain.com/#person"
+      },
+      "datePublished": "2019",
+      "learningResourceType": "Thesis",
+      "educationalLevel": "Doctorate (PhD)",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Academy of Scientific and Innovative Research (AcSIR)",
+        "sameAs": "https://acsir.res.in"
+      },
+      "url": "http://hdl.handle.net/10603/384933"
+    }
+  ],
+
+  "subjectOf": [
+    {
+      "@type": "NewsArticle",
+      "headline": "Result relief in coal capital",
+      "url": "https://www.telegraphindia.com/jharkhand/result-relief-in-coal-capital/cid/878724",
+      "publisher": {
+        "@type": "Organization",
+        "name": "The Telegraph India"
+      },
+      "description": "Media coverage discussing academic excellence in the Coal Capital and Bokaro region. Shahadat Hussain is a class Xth topper from Bokaro Public School, ICSE Board, 2005, Bokaro Steel City, Jharkhand, India."
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1007/s11665-024-09162-7",
+      "headline": "Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion",
+      "author": {
+        "@id": "https://www.shahadathussain.com/#person"
+      },
+      "datePublished": "2024",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Journal of Materials Engineering and Performance"
+      },
+      "url": "https://doi.org/10.1007/s11665-024-09162-7"
+    },
+    {
+      "@type": "ScholarlyArticle",
+      "@id": "https://doi.org/10.1016/j.matdes.2021.109654",
+      "headline": "Additive manufacturing of shape memory alloys: A review with emphasis on powder bed systems",
+      "author": {
+        "@id": "https://www.shahadathussain.com/#person"
+      },
+      "datePublished": "2021",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Materials and Design"
+      },
+      "url": "https://doi.org/10.1016/j.matdes.2021.109654"
+    }
+  ],
 
   "hasCredential": {
     "@type": "EducationalOccupationalCredential",
@@ -200,17 +232,17 @@
       "name": "Mechanical Engineering",
       "url": "https://en.wikipedia.org/wiki/Mechanical_engineering"
     },
-      {
+    {
       "@type": "DefinedTerm",
       "name": "Machine Learning",
       "url": "https://en.wikipedia.org/wiki/Machine_learning"
     },
-      {
+    {
       "@type": "DefinedTerm",
       "name": "Deep Learning",
       "url": "https://en.wikipedia.org/wiki/Deep_learning"
     },
-      {
+    {
       "@type": "DefinedTerm",
       "name": "Artificial Intelligence",
       "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
@@ -221,7 +253,6 @@
       "url": "https://en.wikipedia.org/wiki/Selective_laser_melting"
     }
   ],
-
 
   "identifier": [
     {
@@ -325,7 +356,11 @@
       "email": "contact@shahadathussain.com",
       "telephone": "+971xxxxxxx",
       "url": "https://www.shahadathussain.com/contact",
-      "availableLanguage": ["English", "Hindi", "Urdu"]
+      "availableLanguage": [
+        "English",
+        "Hindi",
+        "Urdu"
+      ]
     },
     {
       "@type": "ContactPoint",
@@ -367,7 +402,7 @@
     "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=10385776",
     "https://scixplorer.org/public-libraries/URuNK_yHRjq9eKIr7zrZZA",
     "https://scholargps.com/scholars/80706971012987/shahadat-hussain",
-   
+    
     "https://www.ku.ac.ae/college-people/shahadat-hussain",
     "https://www.coursera.org/learner/shahadathussain",
     "https://featured.com/p/shahadat-hussain",
@@ -378,7 +413,7 @@
     "https://reasonator.toolforge.org/?q=Q138333037&lang=en",
     "https://encyclopedia.pub/entry/59711",
     
-    "https://github.com/drshahadathussain",    
+    "https://github.com/drshahadathussain",
     "https://drshahadathussain.github.io",
     "https://github.com/shahadat-hussain",
     "https://shahadat-hussain.github.io",
@@ -394,11 +429,11 @@
     "https://shahadathussain.pages.dev",
     "https://drshahadathussain.pages.dev",
     "https://www.mathworks.com/matlabcentral/profile/authors/37406014/",
-
+    
     "https://figshare.com/authors/Shahadat_Hussain/23840619",
     "https://osf.io/wa39u/",
     "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22Hussain%2C+Shahadat%22",
-
+    
     "https://cv.hal.science/shahadathussain",
     
     "https://about.me/shahadat.hussain",
@@ -437,33 +472,13 @@
     "https://shahadathussain.my.canva.site",
     "https://www.slideshare.net/ShahadatHussain9",
     "https://theconversation.com/profiles/shahadat-hussain-2674576",
-
+    
     "https://bsky.app/profile/shahadathussain.bsky.social",
     "https://www.reddit.com/user/hussainshahadat",
     "https://www.threads.com/@drshahadathussain",
     "https://www.facebook.com/shahadathussain.sh",
     "https://twitter.com/enggshahadat",
-    "https://instagram.com/drshahadathussain"
-]
-},
-{
-      "@type": "ScholarlyArticle",
-      "@id": "https://doi.org/10.1007/s11665-024-09162-7",
-      "headline": "Phase Transformation Behavior of NiTi Triply Periodic Minimal Surface Lattices Fabricated by Laser Powder Bed Fusion",
-      "author": { "@id": "https://www.shahadathussain.com/#person" },
-      "datePublished": "2024",
-      "publisher": { "@type": "Organization", "name": "Journal of Materials Engineering and Performance" },
-      "url": "https://doi.org/10.1007/s11665-024-09162-7"
-    },
-
-{
-      "@type": "ScholarlyArticle",
-      "@id": "https://doi.org/10.1016/j.matdes.2021.109654",
-      "headline": "Additive manufacturing of shape memory alloys: A review with emphasis on powder bed systems",
-      "author": { "@id": "https://www.shahadathussain.com/#person" },
-      "datePublished": "2021",
-      "publisher": { "@type": "Organization", "name": "Materials and Design" },
-      "url": "https://doi.org/10.1016/j.matdes.2021.109654"
-    }
+    "https://instagram.com/drshahadathussain",
+    "https://www.telegraphindia.com/jharkhand/result-relief-in-coal-capital/cid/878724"
   ]
 }
