@@ -87,6 +87,15 @@
     }
   ],
 
+	"award": [
+  "Postdoctoral Research Fellowship in Constitutive Modeling and Fatigue Prediction for 3D Printed Nitinol Smart Alloys – Khalifa University Abu Dhabi, 2020–2024",
+  "GATE–CSIR Senior Research Fellowship (SRF) – CSIR India, 2016–2019",
+  "GATE–CSIR Junior Research Fellowship (JRF) – CSIR India, 2014–2016",
+  "Qualified Graduate Aptitude Test in Engineering (GATE) three times (2013–2015), conducted by IITs and IISc, India",
+  "ICSE Class X Topper – Bokaro Public School, 2005"
+],
+
+
   "hasCredential": {
     "@type": "EducationalOccupationalCredential",
     "name": "IBM Data Science Professional Certificate",
