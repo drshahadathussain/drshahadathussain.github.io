@@ -324,6 +324,13 @@
       "value": "1397994843",
       "url": "https://explore.gnd.network/gnd/1397994843"
     },
+	{
+      "@type": "PropertyValue",
+      "propertyID": "LCNAF - Library of Congress Name Authority File",
+      "name": "LCCN",
+      "value": "no2026060291",
+      "url": "https://lccn.loc.gov/no2026060291"
+    },
     {
       "@type": "PropertyValue",
       "propertyID": "Dimensions Author ID",
