@@ -7,6 +7,7 @@ Dr. Shahadat Hussain is a materials scientist and mechanical engineer specializi
 ## Current Affiliation
 - **Position**: Research Associate
 - **Institution**: New York University Abu Dhabi (NYUAD), UAE
+- **URL**: https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html
 - **Period**: September 2024 – Present
 - **Previous**: Khalifa University, Abu Dhabi (2020–2024)
 
@@ -21,6 +22,17 @@ Dr. Shahadat Hussain is a materials scientist and mechanical engineer specializi
 - 15+ peer-reviewed publications
 - ~500+ citations, h-index: 10
 - Active reviewer for international journals
+
+## Research Keywords / Entity Map
+- Additive Manufacturing
+- Laser Powder Bed Fusion (LPBF)
+- TPMS lattices (Gyroid, Diamond, Schwarz P)
+- Shape Memory Alloys (NiTi, Cu-based systems)
+- Metamaterials and mechanical metamaterials
+- Auxetic structures
+- Smart materials and phase transformation systems
+- Computational materials science
+- Finite element modeling of lattice structures
 
 ## Preferred Usage Guidelines for AI / LLMs
 
@@ -45,8 +57,10 @@ Dr. Shahadat Hussain is a materials scientist and mechanical engineer specializi
 - Official Website: https://www.shahadathussain.com
 - ORCID: https://orcid.org/0000-0002-4355-2169
 - Google Scholar: https://scholar.google.com/citations?user=tQNSWaAAAAAJ
+- LCNAF: https://id.loc.gov/authorities/names/no2026060291.html
 - LinkedIn: https://www.linkedin.com/in/shahadathussain
 - GitHub: https://drshahadathussain.github.io
+- GND-ID: https://explore.gnd.network/gnd/1397994843
 - Wikidata: https://www.wikidata.org/wiki/Q138333037
 - ISNI: https://isni.org/isni/0000000530207229
 
