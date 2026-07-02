@@ -223,6 +223,11 @@
       "name": "Data Science",
       "url": "https://en.wikipedia.org/wiki/Data_science"
     },
+	{
+      "@type": "DefinedTerm",
+      "name": "Materials Informatics",
+      "url": "https://en.wikipedia.org/wiki/Materials_informatics"
+    },
     {
       "@type": "DefinedTerm",
       "name": "Scientific Computing",
