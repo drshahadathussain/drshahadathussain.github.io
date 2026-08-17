@@ -404,32 +404,82 @@
 <section id="code" style="background:var(--surface)">
   <div class="wrap">
     <span class="kicker">// code_showcase</span>
-    <h2>From equation to print file</h2>
-    <p class="lead">The heart of the lattice generator — a gyroid is just three lines of trigonometry until you discretize it, threshold it, and hand it to a printer.</p>
+    <h2>From target density to a printable STL</h2>
+    <p class="lead">A complete generation pipeline: sample the gyroid field, solve for the exact iso-value that hits 30% relative density using Brent's root-finding method, extract a watertight surface with marching cubes, and export a laser-powder-bed-fusion-ready STL.</p>
     <div class="code-block-wrap reveal">
       <div class="terminal">
-        <div class="term-bar"><i></i><i></i><i></i><span class="term-title">tpms_generator.py — computational-materials</span></div>
+        <div class="term-bar"><i></i><i></i><i></i><span class="term-title">gyroid_generator.py — computational-materials</span></div>
 <pre><span class="k">import</span> <span class="v">numpy</span> <span class="k">as</span> <span class="v">np</span>
+<span class="k">from</span> <span class="v">scipy.optimize</span> <span class="k">import</span> <span class="v">brentq</span>
+<span class="k">from</span> <span class="v">skimage.measure</span> <span class="k">import</span> <span class="v">marching_cubes</span>
+<span class="k">from</span> <span class="v">stl</span> <span class="k">import</span> <span class="v">mesh</span>
 
-<span class="k">def</span> <span class="f">gyroid</span>(<span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span>):
-    <span class="s">"""Implicit gyroid surface — F(x, y, z) = t."""</span>
-    <span class="k">return</span> (<span class="v">np</span>.<span class="f">sin</span>(<span class="v">x</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">y</span>)
-          <span class="o">+</span> <span class="v">np</span>.<span class="f">sin</span>(<span class="v">y</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">z</span>)
-          <span class="o">+</span> <span class="v">np</span>.<span class="f">sin</span>(<span class="v">z</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">x</span>))
+<span class="k">def</span> <span class="f">generate_gyroid_cube</span>(
+    <span class="v">side_length</span><span class="o">=</span><span class="n">50.0</span>,      <span class="c"># mm</span>
+    <span class="v">unit_cell_size</span><span class="o">=</span><span class="n">10.0</span>,   <span class="c"># mm (5 unit cells along each dimension)</span>
+    <span class="v">target_density</span><span class="o">=</span><span class="n">0.30</span>,   <span class="c"># 30% relative density</span>
+    <span class="v">resolution</span><span class="o">=</span><span class="n">100</span>,        <span class="c"># Voxels per side</span>
+    <span class="v">output_filename</span><span class="o">=</span><span class="s">"gyroid_cube.stl"</span>
+):
+    <span class="c"># 1. Create spatial 3D grid</span>
+    <span class="v">x</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">linspace</span>(<span class="n">0</span>, <span class="v">side_length</span>, <span class="v">resolution</span>)
+    <span class="v">y</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">linspace</span>(<span class="n">0</span>, <span class="v">side_length</span>, <span class="v">resolution</span>)
+    <span class="v">z</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">linspace</span>(<span class="n">0</span>, <span class="v">side_length</span>, <span class="v">resolution</span>)
+    <span class="v">X</span>, <span class="v">Y</span>, <span class="v">Z</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">meshgrid</span>(<span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span>, <span class="v">indexing</span><span class="o">=</span><span class="s">'ij'</span>)
 
-<span class="k">def</span> <span class="f">sample_field</span>(<span class="v">level_fn</span>, <span class="v">n</span><span class="o">=</span><span class="n">160</span>, <span class="v">threshold</span><span class="o">=</span><span class="n">0.35</span>):
-    <span class="s">"""Sample the level-set field on a regular grid.
+    <span class="c"># 2. Compute standard Gyroid scalar field</span>
+    <span class="v">k</span> <span class="o">=</span> <span class="n">2</span> <span class="o">*</span> <span class="v">np</span>.<span class="v">pi</span> <span class="o">/</span> <span class="v">unit_cell_size</span>
+    <span class="v">G</span> <span class="o">=</span> (<span class="v">np</span>.<span class="f">sin</span>(<span class="v">k</span> <span class="o">*</span> <span class="v">X</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">k</span> <span class="o">*</span> <span class="v">Y</span>) <span class="o">+</span>
+         <span class="v">np</span>.<span class="f">sin</span>(<span class="v">k</span> <span class="o">*</span> <span class="v">Y</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">k</span> <span class="o">*</span> <span class="v">Z</span>) <span class="o">+</span>
+         <span class="v">np</span>.<span class="f">sin</span>(<span class="v">k</span> <span class="o">*</span> <span class="v">Z</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">k</span> <span class="o">*</span> <span class="v">X</span>))
 
-    The resulting scalar field feeds marching-cubes
-    to produce a watertight, LPBF-ready mesh.
-    """</span>
-    <span class="v">grid</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">linspace</span>(<span class="n">0</span>, <span class="n">2</span> <span class="o">*</span> <span class="v">np</span>.<span class="v">pi</span>, <span class="v">n</span>)
-    <span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">meshgrid</span>(<span class="v">grid</span>, <span class="v">grid</span>, <span class="v">grid</span>)
-    <span class="k">return</span> (<span class="f">level_fn</span>(<span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span>) <span class="o">-</span> <span class="v">threshold</span>).<span class="f">astype</span>(<span class="v">np</span>.<span class="v">float32</span>)
+    <span class="c"># 3. Calculate target offset 'C' for exact relative density via root-finding</span>
+    <span class="k">def</span> <span class="f">density_error</span>(<span class="v">C</span>):
+        <span class="c"># Sheet-based Gyroid condition: |G| &lt;= C</span>
+        <span class="v">solid_mask</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">abs</span>(<span class="v">G</span>) <span class="o">&lt;=</span> <span class="v">C</span>
+        <span class="v">current_density</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">mean</span>(<span class="v">solid_mask</span>)
+        <span class="k">return</span> <span class="v">current_density</span> <span class="o">-</span> <span class="v">target_density</span>
 
-<span class="c"># One unit cell, ready for laser powder bed fusion</span>
-<span class="v">field</span> <span class="o">=</span> <span class="f">sample_field</span>(<span class="v">gyroid</span>, <span class="v">n</span><span class="o">=</span><span class="n">160</span>, <span class="v">threshold</span><span class="o">=</span><span class="n">0.35</span>)
-<span class="f">print</span>(<span class="s">f"field sampled: {field.shape} · ready for meshing"</span>)</pre>
+    <span class="c"># Find optimal offset C in range [0, 1.5]</span>
+    <span class="v">C_opt</span> <span class="o">=</span> <span class="f">brentq</span>(<span class="v">density_error</span>, <span class="n">0.0</span>, <span class="n">1.5</span>)
+    <span class="f">print</span>(<span class="s">f"Target Relative Density: {target_density * 100:.1f}%"</span>)
+    <span class="f">print</span>(<span class="s">f"Calculated Isovalue Offset (C): {C_opt:.4f}"</span>)
+
+    <span class="c"># 4. Generate 3D Solid Matrix</span>
+    <span class="v">solid_matrix</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">abs</span>(<span class="v">G</span>) <span class="o">&lt;=</span> <span class="v">C_opt</span>
+    <span class="v">actual_density</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">mean</span>(<span class="v">solid_matrix</span>)
+    <span class="f">print</span>(<span class="s">f"Achieved Relative Density: {actual_density * 100:.2f}%"</span>)
+
+    <span class="c"># 5. Extract 3D Surface Mesh using Marching Cubes</span>
+    <span class="c"># Pad matrix to ensure closed boundary faces on outer walls</span>
+    <span class="v">padded_matrix</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">pad</span>(<span class="v">solid_matrix</span>, <span class="v">pad_width</span><span class="o">=</span><span class="n">1</span>, <span class="v">mode</span><span class="o">=</span><span class="s">'constant'</span>, <span class="v">constant_values</span><span class="o">=</span><span class="k">False</span>)
+
+    <span class="v">verts</span>, <span class="v">faces</span>, <span class="v">normals</span>, <span class="v">_</span> <span class="o">=</span> <span class="f">marching_cubes</span>(
+        <span class="v">padded_matrix</span>.<span class="f">astype</span>(<span class="v">float</span>),
+        <span class="v">level</span><span class="o">=</span><span class="n">0.5</span>,
+        <span class="v">spacing</span><span class="o">=</span>(<span class="v">side_length</span> <span class="o">/</span> (<span class="v">resolution</span> <span class="o">-</span> <span class="n">1</span>),) <span class="o">*</span> <span class="n">3</span>
+    )
+
+    <span class="c"># Shift vertices back to account for padding</span>
+    <span class="v">verts</span> <span class="o">-=</span> (<span class="v">side_length</span> <span class="o">/</span> (<span class="v">resolution</span> <span class="o">-</span> <span class="n">1</span>))
+
+    <span class="c"># 6. Save mesh to STL file</span>
+    <span class="v">gyroid_mesh</span> <span class="o">=</span> <span class="v">mesh</span>.<span class="f">Mesh</span>(<span class="v">np</span>.<span class="f">zeros</span>(<span class="v">faces</span>.<span class="v">shape</span>[<span class="n">0</span>], <span class="v">dtype</span><span class="o">=</span><span class="v">mesh</span>.<span class="v">Mesh</span>.<span class="v">dtype</span>))
+    <span class="k">for</span> <span class="v">i</span>, <span class="v">f</span> <span class="k">in</span> <span class="f">enumerate</span>(<span class="v">faces</span>):
+        <span class="k">for</span> <span class="v">j</span> <span class="k">in</span> <span class="f">range</span>(<span class="n">3</span>):
+            <span class="v">gyroid_mesh</span>.<span class="v">vectors</span>[<span class="v">i</span>][<span class="v">j</span>] <span class="o">=</span> <span class="v">verts</span>[<span class="v">f</span>[<span class="v">j</span>]]
+
+    <span class="v">gyroid_mesh</span>.<span class="f">save</span>(<span class="v">output_filename</span>)
+    <span class="f">print</span>(<span class="s">f"Successfully exported Gyroid STL to '{output_filename}'"</span>)
+
+<span class="k">if</span> <span class="v">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span>:
+    <span class="f">generate_gyroid_cube</span>(
+        <span class="v">side_length</span><span class="o">=</span><span class="n">50.0</span>,
+        <span class="v">unit_cell_size</span><span class="o">=</span><span class="n">10.0</span>,
+        <span class="v">target_density</span><span class="o">=</span><span class="n">0.30</span>,
+        <span class="v">resolution</span><span class="o">=</span><span class="n">120</span>,
+        <span class="v">output_filename</span><span class="o">=</span><span class="s">"gyroid_cube_50mm_30density.stl"</span>
+    )</pre>
       </div>
     </div>
   </div>
