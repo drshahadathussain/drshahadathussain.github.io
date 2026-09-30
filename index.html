@@ -16,135 +16,151 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "@id": "https://www.shahadathussain.com/#person",
-  "additionalType": [
-    "https://schema.org/Researcher",
-    "https://schema.org/Engineer",
-    "https://schema.org/Scientist"
-  ],
-  "name": "Dr. Shahadat Hussain",
-  "givenName": "Shahadat",
-  "familyName": "Hussain",
-  "honorificPrefix": "Dr.",
-  "alternateName": [
-    "Shahadat Hussain",
-    "Shahadat Hussain PhD",
-    "Dr. Shahadat Hussain NYU"
-  ],
-  "jobTitle": "Associate Research Scientist in Additive Manufacturing and Advanced Materials",
-  "description": "Dr. Shahadat Hussain is a researcher specializing in Additive Manufacturing, Metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization, and data-driven materials science.",
-  "url": "https://www.shahadathussain.com",
-  "image": {
-    "@type": "ImageObject",
-    "@id": "https://www.shahadathussain.com/#headshot",
-    "url": "https://cdn.shahadathussain.com/shahadat-hussain-headshot.png",
-    "caption": "Dr. Shahadat Hussain – Researcher in Additive Manufacturing and Materials Science at NYU Abu Dhabi",
-    "width": 800,
-    "height": 800
-  },
-  "workLocation": {
-    "@type": "Place",
-    "name": "Abu Dhabi, United Arab Emirates"
-  },
-  "worksFor": {
-    "@type": "Organization",
-    "name": "New York University Abu Dhabi",
-    "url": "https://nyuad.nyu.edu",
-    "sameAs": "https://ror.org/00e5k0821"
-  },
-  "affiliation": [
+  "@graph": [
     {
-      "@type": "Organization",
-      "name": "New York University Abu Dhabi",
-      "url": "https://nyuad.nyu.edu"
+      "@type": "ProfilePage",
+      "@id": "https://www.shahadathussain.com/#profilepage",
+      "url": "https://www.shahadathussain.com",
+      "mainEntity": { "@id": "https://www.shahadathussain.com/#person" }
     },
     {
-      "@type": "Organization",
-      "name": "Khalifa University",
-      "url": "https://www.ku.ac.ae",
-      "sameAs": "https://ror.org/05hffr360"
-    },
-    {
-      "@type": "Organization",
-      "name": "Council of Scientific and Industrial Research (CSIR)",
-      "url": "https://www.csir.res.in",
-      "sameAs": "https://ror.org/02x351n42"
+      "@type": "Person",
+      "@id": "https://www.shahadathussain.com/#person",
+      "name": "Shahadat Hussain",
+      "givenName": "Shahadat",
+      "familyName": "Hussain",
+      "honorificPrefix": "Dr.",
+      "honorificSuffix": "PhD",
+      "alternateName": ["Dr. Shahadat Hussain", "Shahadat Hussain, PhD", "शहादत हसैन"],
+      "url": "https://www.shahadathussain.com",
+      "image": {
+        "@type": "ImageObject",
+        "@id": "https://www.shahadathussain.com/#headshot",
+        "url": "https://cdn.shahadathussain.com/shahadat-hussain-headshot.png",
+        "caption": "Dr. Shahadat Hussain, researcher in additive manufacturing and materials science at NYU Abu Dhabi",
+        "width": 800,
+        "height": 800
+      },
+      "jobTitle": "Associate Research Scientist",
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Materials scientist"
+      },
+      "description": "Materials scientist specializing in additive manufacturing, metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization and data-driven materials science.",
+      "nationality": { "@type": "Country", "name": "India" },
+      "knowsLanguage": ["en", "hi", "ur"],
+      "workLocation": {
+        "@type": "Place",
+        "name": "Abu Dhabi, United Arab Emirates"
+      },
+      "worksFor": {
+        "@type": "CollegeOrUniversity",
+        "name": "New York University Abu Dhabi",
+        "url": "https://nyuad.nyu.edu",
+        "sameAs": "https://ror.org/00e5k0821"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Khalifa University",
+          "url": "https://www.ku.ac.ae",
+          "sameAs": "https://ror.org/05hffr360"
+        },
+        {
+          "@type": "Organization",
+          "name": "Council of Scientific and Industrial Research (CSIR)",
+          "url": "https://www.csir.res.in",
+          "sameAs": "https://ror.org/02x351n42"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Academy of Scientific and Innovative Research (AcSIR)",
+          "url": "https://acsir.res.in",
+          "sameAs": "https://ror.org/053rcsq61"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+          "url": "https://www.rgpv.ac.in",
+          "sameAs": "https://ror.org/03xmje391"
+        }
+      ],
+      "memberOf": [
+        { "@type": "Organization", "name": "AM-Platform:European Technology Platform in Additive Manufacturing" },
+	 	{ "@type": "Organization", "name": "European Materials Modelling Council (EMMC)" },
+		{ "@type": "Organization", "name": "Materials Research Society (MRS)" },
+        { "@type": "Organization", "name": "Research Data Alliance (RDA)" },
+        { "@type": "Organization", "name": "Center for Open Science" },
+        { "@type": "Organization", "name": "FORCE11" }
+      ],
+      "award": [
+        "Postdoctoral Research Fellowship, Khalifa University (2020–2024)",
+        "GATE–CSIR Senior Research Fellowship (SRF), CSIR India (2016–2019)",
+        "GATE–CSIR Junior Research Fellowship (JRF), CSIR India (2014–2016)"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": "IBM Data Science Professional Certificate",
+          "url": "https://www.coursera.org/account/accomplishments/professional-cert/4R8YJ5YWQ0NH",
+          "credentialCategory": "Professional Certificate",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "IBM",
+            "url": "https://www.ibm.com"
+          }
+        }
+      ],
+      "knowsAbout": [
+        "Additive Manufacturing",
+        "Laser Powder Bed Fusion",
+        "Shape Memory Alloys",
+        "Nitinol",
+        "Metamaterials",
+        "TPMS Lattice Structures",
+        "Materials Characterization",
+        "Data Science",
+        "Materials Informatics"
+      ],
+      "identifier": [
+        { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-4355-2169" },
+        { "@type": "PropertyValue", "propertyID": "Scopus Author ID", "value": "56380929800" },
+        { "@type": "PropertyValue", "propertyID": "Web of Science ResearcherID", "value": "I-3091-2017" },
+        { "@type": "PropertyValue", "propertyID": "Wikidata", "value": "Q138333037" }
+      ],
+      "sameAs": [
+        "https://www.wikidata.org/wiki/Q138333037",
+        "https://orcid.org/0000-0002-4355-2169",
+        "https://scholar.google.com/citations?user=tQNSWaAAAAAJ",
+        "https://www.scopus.com/authid/detail.uri?authorId=56380929800",
+        "https://www.webofscience.com/wos/author/record/I-3091-2017",
+        "https://openalex.org/A5063248081",
+        "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917",
+        "https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html",
+        "https://www.linkedin.com/in/shahadathussain",
+        "https://www.researchgate.net/profile/Shahadat-Hussain",
+        "https://github.com/drshahadathussain",
+        "https://www.kaggle.com/drshahadathussain",
+		"https://app.ens.domains/shahadathussain.eth",
+        "https://viaf.org/viaf/4718178467061535190008",
+        "https://isni.org/isni/0000000530207229",
+        "https://id.loc.gov/authorities/names/no2026060291",
+        "https://d-nb.info/gnd/1397994843",
+		"https://dbn.bn.org.pl/descriptor-details/a1000001750479",
+		"https://cir.nii.ac.jp/crid/1380021397012024448",
+		"http://lattes.cnpq.br/2623432910605485",
+		"https://cv.hal.science/shahadathussain",
+		"https://uaeresearchmap.ae/user/shahadat-hussain",
+		"https://www.google.com/search?kgmid=/g/11y_zfqjp8",
+        "https://id.oclc.org/worldcat/entity/E39RV47bhYmYMcrWk7kJXqwg76"
+      ]
     }
-  ],
-  "alumniOf": [
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Academy of Scientific and Innovative Research (AcSIR)",
-      "url": "https://acsir.res.in",
-      "sameAs": "https://ror.org/053rcsq61"
-    },
-    {
-      "@type": "CollegeOrUniversity",
-      "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
-      "url": "https://www.rgpv.ac.in",
-      "sameAs": "https://ror.org/03xmje391"
-    }
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/in/shahadathussain",
-    "https://github.com/drshahadathussain",
-    "https://www.kaggle.com/drshahadathussain",
-    "https://orcid.org/0000-0002-4355-2169",
-    "https://isni.org/isni/0000000530207229",
-    "http://viaf.org/viaf/4718178467061535190008",
-    "http://id.loc.gov/authorities/names/no2026060291",
-    "https://d-nb.info/gnd/1397994843",
-	"https://dbn.bn.org.pl/descriptor-details/a1000001750479",
-	"https://id.oclc.org/worldcat/entity/E39RV47bhYmYMcrWk7kJXqwg76",
-	"https://cir.nii.ac.jp/crid/1380021397012024448",
-	"http://lattes.cnpq.br/2623432910605485",
-    "https://www.wikidata.org/wiki/Q138333037",
-    "https://www.scopus.com/authid/detail.uri?authorId=56380929800",
-    "https://www.webofscience.com/wos/author/record/I-3091-2017",
-    "https://openalex.org/authors/a5063248081",
-	"https://www.google.com/search?kgmid=/g/11y_zfqjp8",
-    "https://scholar.google.com/citations?user=tQNSWaAAAAAJ",
-    "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917",
-    "https://www.researchgate.net/profile/Shahadat-Hussain",
-    "https://app.dimensions.ai/details/entities/publication/author/ur.010333436632.76",
-    "https://loop.frontiersin.org/people/3499867/overview",
-    "https://cv.hal.science/shahadathussain",
-    "https://app.ens.domains/shahadathussain.eth",
-	"https://uaeresearchmap.ae/user/shahadat-hussain",
-	"https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html"
-  ],
-  "award": [
-    "Postdoctoral Research Fellowship, Khalifa University (2020–2024)",
-    "GATE–CSIR Senior Research Fellowship (SRF), CSIR India (2016–2019)",
-    "GATE–CSIR Junior Research Fellowship (JRF), CSIR India (2014–2016)"
-  ],
-  "hasCredential": [
-    {
-      "@type": "EducationalOccupationalCredential",
-      "name": "IBM Data Science Professional Certificate",
-      "url": "https://www.coursera.org/account/accomplishments/professional-cert/4R8YJ5YWQ0NH",
-      "credentialCategory": "Professional Certificate",
-      "recognizedBy": {
-        "@type": "Organization",
-        "name": "IBM",
-        "url": "https://www.ibm.com"
-      }
-    }
-  ],
-  "knowsAbout": [
-    "Additive Manufacturing",
-    "Metamaterials",
-    "TPMS Lattice Structures",
-    "Shape Memory Alloys",
-    "Materials Characterization",
-    "Laser Powder Bed Fusion",
-    "Data Science",
-    "Materials Informatics"
   ]
 }
-</script>	
+</script>
 
+
+	
 <!-- Schema ends here -->
 
 <meta charset="UTF-8">
