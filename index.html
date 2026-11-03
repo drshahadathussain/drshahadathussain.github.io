@@ -1,580 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Shahadat Hussain — Materials Science & Data-Driven Manufacturing</title>
+  <meta name="description" content="Advanced materials scientist building Python-driven pipelines for TPMS metamaterials, LPBF additive manufacturing, NiTi shape memory alloys, and ML-based defect prediction. Abu Dhabi, UAE.">
+  <meta property="og:title" content="Dr. Shahadat Hussain — Computational Materials Science">
+  <meta property="og:description" content="Code, simulation, and data-driven workflows for advanced materials and additive manufacturing.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
+  <link rel="canonical" href="https://www.shahadathussain.com/" />
+  <link rel="me" href="https://fediscience.org/@shahadathussain" />
 
-<link rel="me" href="https://fediscience.org/@shahadathussain" />
-	
-<!-- Google Analytics (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49YSWERTE"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-H49YSWERTE');
-    </script>
-	
-<!-- Schema starts from here -->
+  <!-- Google Analytics (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H49YSWERTE"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-H49YSWERTE');
+  </script>
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "ProfilePage",
-      "@id": "https://www.shahadathussain.com/#profilepage",
-      "url": "https://www.shahadathussain.com",
-      "mainEntity": { "@id": "https://www.shahadathussain.com/#person" }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://www.shahadathussain.com/#person",
-      "name": "Shahadat Hussain",
-      "givenName": "Shahadat",
-      "familyName": "Hussain",
-      "honorificPrefix": "Dr.",
-      "honorificSuffix": "PhD",
-      "alternateName": ["Dr. Shahadat Hussain", "Shahadat Hussain, PhD", "शहादत हुसैन", "شهادت حسين"],
-      "url": "https://www.shahadathussain.com",
-      "image": {
-        "@type": "ImageObject",
-        "@id": "https://www.shahadathussain.com/#headshot",
-        "url": "https://cdn.shahadathussain.com/shahadat-hussain-headshot.png",
-        "caption": "Dr. Shahadat Hussain, researcher in additive manufacturing and materials science at NYU Abu Dhabi",
-        "width": 800,
-        "height": 800
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "@id": "https://www.shahadathussain.com/#profilepage",
+        "url": "https://www.shahadathussain.com",
+        "mainEntity": { "@id": "https://www.shahadathussain.com/#person" }
       },
-      "jobTitle": "Associate Research Scientist",
-      "hasOccupation": {
-        "@type": "Occupation",
-        "name": "Materials scientist"
-      },
-      "description": "Materials scientist specializing in additive manufacturing, metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization and data-driven materials science.",
-      "nationality": { "@type": "Country", "name": "India" },
-      "knowsLanguage": ["en", "hi", "ur"],
-      "workLocation": {
-        "@type": "Place",
-        "name": "Abu Dhabi, United Arab Emirates"
-      },
-      "worksFor": {
-        "@type": "CollegeOrUniversity",
-        "name": "New York University Abu Dhabi",
-        "url": "https://nyuad.nyu.edu",
-        "sameAs": "https://ror.org/00e5k0821"
-      },
-      "alumniOf": [
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Khalifa University",
-          "url": "https://www.ku.ac.ae",
-          "sameAs": "https://ror.org/05hffr360"
+      {
+        "@type": "Person",
+        "@id": "https://www.shahadathussain.com/#person",
+        "name": "Shahadat Hussain",
+        "givenName": "Shahadat",
+        "familyName": "Hussain",
+        "honorificPrefix": "Dr.",
+        "honorificSuffix": "PhD",
+        "alternateName": ["Dr. Shahadat Hussain", "Shahadat Hussain, PhD", "शहादत हुसैन", "شهادت حسين"],
+        "url": "https://www.shahadathussain.com",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://www.shahadathussain.com/#headshot",
+          "url": "https://cdn.shahadathussain.com/shahadat-hussain-headshot.png",
+          "caption": "Dr. Shahadat Hussain, researcher in additive manufacturing and materials science at NYU Abu Dhabi",
+          "width": 800,
+          "height": 800
         },
-        {
-          "@type": "Organization",
-          "name": "Council of Scientific and Industrial Research (CSIR)",
-          "url": "https://www.csir.res.in",
-          "sameAs": "https://ror.org/02x351n42"
+        "jobTitle": "Associate Research Scientist",
+        "hasOccupation": {
+          "@type": "Occupation",
+          "name": "Materials scientist"
         },
-        {
-          "@type": "CollegeOrUniversity",
-          "name": "Academy of Scientific and Innovative Research (AcSIR)",
-          "url": "https://acsir.res.in",
-          "sameAs": "https://ror.org/053rcsq61"
+        "description": "Materials scientist specializing in additive manufacturing, metamaterials, TPMS lattice structures, NiTi shape memory alloys, advanced materials characterization and data-driven materials science.",
+        "nationality": { "@type": "Country", "name": "India" },
+        "knowsLanguage": ["en", "hi", "ur"],
+        "workLocation": {
+          "@type": "Place",
+          "name": "Abu Dhabi, United Arab Emirates"
         },
-        {
+        "worksFor": {
           "@type": "CollegeOrUniversity",
-          "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
-          "url": "https://www.rgpv.ac.in",
-          "sameAs": "https://ror.org/03xmje391"
-        }
-      ],
-      "memberOf": [
-        { "@type": "Organization", "name": "AM-Platform: European Technology Platform in Additive Manufacturing" },
-	    { "@type": "Organization", "name": "The UK Metamaterials Network" },
-	 	{ "@type": "Organization", "name": "European Materials Modelling Council (EMMC)" },
-		{ "@type": "Organization", "name": "Materials Research Society (MRS)" },
-        { "@type": "Organization", "name": "Research Data Alliance (RDA)" },
-        { "@type": "Organization", "name": "Center for Open Science" },
-        { "@type": "Organization", "name": "FORCE11" }
-      ],
-      "award": [
-        "Postdoctoral Research Fellowship, Khalifa University (2020–2024)",
-        "GATE–CSIR Senior Research Fellowship (SRF), CSIR India (2016–2019)",
-        "GATE–CSIR Junior Research Fellowship (JRF), CSIR India (2014–2016)"
-      ],
-      "hasCredential": [
-        {
-          "@type": "EducationalOccupationalCredential",
-          "name": "IBM Data Science Professional Certificate",
-          "url": "https://www.coursera.org/account/accomplishments/professional-cert/4R8YJ5YWQ0NH",
-          "credentialCategory": "Professional Certificate",
-          "recognizedBy": {
+          "name": "New York University Abu Dhabi",
+          "url": "https://nyuad.nyu.edu",
+          "sameAs": "https://ror.org/00e5k0821"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Khalifa University",
+            "url": "https://www.ku.ac.ae",
+            "sameAs": "https://ror.org/05hffr360"
+          },
+          {
             "@type": "Organization",
-            "name": "IBM",
-            "url": "https://www.ibm.com"
+            "name": "Council of Scientific and Industrial Research (CSIR)",
+            "url": "https://www.csir.res.in",
+            "sameAs": "https://ror.org/02x351n42"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Academy of Scientific and Innovative Research (AcSIR)",
+            "url": "https://acsir.res.in",
+            "sameAs": "https://ror.org/053rcsq61"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)",
+            "url": "https://www.rgpv.ac.in",
+            "sameAs": "https://ror.org/03xmje391"
+          }
+        ],
+        "memberOf": [
+          { "@type": "Organization", "name": "AM-Platform: European Technology Platform in Additive Manufacturing" },
+          { "@type": "Organization", "name": "The UK Metamaterials Network" },
+          { "@type": "Organization", "name": "European Materials Modelling Council (EMMC)" },
+          { "@type": "Organization", "name": "Materials Research Society (MRS)" },
+          { "@type": "Organization", "name": "Research Data Alliance (RDA)" },
+          { "@type": "Organization", "name": "Center for Open Science" },
+          { "@type": "Organization", "name": "FORCE11" }
+        ],
+        "award": [
+          "Postdoctoral Research Fellowship, Khalifa University (2020–2024)",
+          "GATE–CSIR Senior Research Fellowship (SRF), CSIR India (2016–2019)",
+          "GATE–CSIR Junior Research Fellowship (JRF), CSIR India (2014–2016)"
+        ],
+        "hasCredential": [
+          {
+            "@type": "EducationalOccupationalCredential",
+            "name": "IBM Data Science Professional Certificate",
+            "url": "https://www.coursera.org/account/accomplishments/professional-cert/4R8YJ5YWQ0NH",
+            "credentialCategory": "Professional Certificate",
+            "recognizedBy": {
+              "@type": "Organization",
+              "name": "IBM",
+              "url": "https://www.ibm.com"
+            }
+          }
+        ],
+        "knowsAbout": [
+          "Additive Manufacturing",
+          "Laser Powder Bed Fusion",
+          "Shape Memory Alloys",
+          "Nitinol",
+          "Metamaterials",
+          "TPMS Lattice Structures",
+          "Materials Characterization",
+          "Data Science",
+          "Materials Informatics"
+        ],
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-4355-2169" },
+          { "@type": "PropertyValue", "propertyID": "Scopus Author ID", "value": "56380929800" },
+          { "@type": "PropertyValue", "propertyID": "Web of Science ResearcherID", "value": "I-3091-2017" },
+          { "@type": "PropertyValue", "propertyID": "Wikidata", "value": "Q138333037" }
+        ],
+        "sameAs": [
+          "https://www.wikidata.org/wiki/Q138333037",
+          "https://orcid.org/0000-0002-4355-2169",
+          "https://scholar.google.com/citations?user=tQNSWaAAAAAJ",
+          "https://www.scopus.com/authid/detail.uri?authorId=56380929800",
+          "https://www.webofscience.com/wos/author/record/I-3091-2017",
+          "https://openalex.org/A5063248081",
+          "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917",
+          "https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html",
+          "https://www.linkedin.com/in/shahadathussain",
+          "https://www.researchgate.net/profile/Shahadat-Hussain",
+          "https://github.com/drshahadathussain",
+          "https://www.kaggle.com/drshahadathussain",
+          "https://app.ens.domains/shahadathussain.eth",
+          "https://viaf.org/viaf/4718178467061535190008",
+          "https://isni.org/isni/0000000530207229",
+          "https://id.loc.gov/authorities/names/no2026060291",
+          "https://d-nb.info/gnd/1397994843",
+          "https://www.idref.fr/299550656",
+          "https://dbn.bn.org.pl/descriptor-details/a1000001750479",
+          "https://cir.nii.ac.jp/crid/1380021397012024448",
+          "http://lattes.cnpq.br/2623432910605485",
+          "https://uaeresearchmap.ae/user/shahadat-hussain",
+          "https://www.google.com/search?kgmid=/g/11y_zfqjp8",
+          "https://id.oclc.org/worldcat/entity/E39RV47bhYmYMcrWk7kJXqwg76",
+          "https://x.com/ShahadatPhD",
+          "https://bsky.app/profile/shahadathussain.com",
+          "https://fediscience.org/@shahadathussain",
+          "https://drshahadathussain.substack.com"
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Industrial Google Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,700;0,800;1,700&family=JetBrains+Mono:ital,wght@0,400;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            hazard: '#ffb703',
+            'hazard-dark': '#d49600',
+            steel: '#1e2630',
+            'steel-light': '#2a3441',
+            'steel-border': '#3a4759',
+            'industrial-bg': '#0f1318',
+            'blueprint-cyan': '#38bdf8',
+            'alert-red': '#ef4444',
+            'ok-green': '#10b981',
+          },
+          fontFamily: {
+            mono: ['"JetBrains Mono"', 'monospace'],
+            condensed: ['"Barlow Condensed"', 'sans-serif'],
+            sans: ['"Space Grotesk"', 'sans-serif'],
           }
         }
-      ],
-      "knowsAbout": [
-        "Additive Manufacturing",
-        "Laser Powder Bed Fusion",
-        "Shape Memory Alloys",
-        "Nitinol",
-        "Metamaterials",
-        "TPMS Lattice Structures",
-        "Materials Characterization",
-        "Data Science",
-        "Materials Informatics"
-      ],
-      "identifier": [
-        { "@type": "PropertyValue", "propertyID": "ORCID", "value": "0000-0002-4355-2169" },
-        { "@type": "PropertyValue", "propertyID": "Scopus Author ID", "value": "56380929800" },
-        { "@type": "PropertyValue", "propertyID": "Web of Science ResearcherID", "value": "I-3091-2017" },
-        { "@type": "PropertyValue", "propertyID": "Wikidata", "value": "Q138333037" }
-      ],
-      "sameAs": [
-        "https://www.wikidata.org/wiki/Q138333037",
-        "https://orcid.org/0000-0002-4355-2169",
-        "https://scholar.google.com/citations?user=tQNSWaAAAAAJ",
-        "https://www.scopus.com/authid/detail.uri?authorId=56380929800",
-        "https://www.webofscience.com/wos/author/record/I-3091-2017",
-        "https://openalex.org/A5063248081",
-        "https://www.semanticscholar.org/author/Shahadat-Hussain/2048939917",
-        "https://nyuad.nyu.edu/en/research/researchers/research-staff/shahadat-hussain.html",
-        "https://www.linkedin.com/in/shahadathussain",
-        "https://www.researchgate.net/profile/Shahadat-Hussain",
-        "https://github.com/drshahadathussain",
-        "https://www.kaggle.com/drshahadathussain",
-		"https://app.ens.domains/shahadathussain.eth",
-        "https://viaf.org/viaf/4718178467061535190008",
-        "https://isni.org/isni/0000000530207229",
-        "https://id.loc.gov/authorities/names/no2026060291",
-        "https://d-nb.info/gnd/1397994843",
-	    "https://www.idref.fr/299550656",
-		"https://dbn.bn.org.pl/descriptor-details/a1000001750479",
-		"https://cir.nii.ac.jp/crid/1380021397012024448",
-		"http://lattes.cnpq.br/2623432910605485",
-		"https://uaeresearchmap.ae/user/shahadat-hussain",
-		"https://www.google.com/search?kgmid=/g/11y_zfqjp8",
-        "https://id.oclc.org/worldcat/entity/E39RV47bhYmYMcrWk7kJXqwg76",
-		"https://x.com/ShahadatPhD",
-		"https://bsky.app/profile/shahadathussain.com",
-		"https://fediscience.org/@shahadathussain",
-		"https://drshahadathussain.substack.com"
-      ]
+      }
     }
-  ]
-}
-</script>
+  </script>
 
+  <style>
+    :root {
+      --industrial-hazard: #ffb703;
+      --industrial-bg: #0f1318;
+      --industrial-panel: #161c24;
+      --industrial-border: #2d3748;
+    }
 
-	
-<!-- Schema ends here -->
+    body {
+      background-color: var(--industrial-bg);
+      color: #e2e8f0;
+      background-image: 
+        linear-gradient(to right, rgba(255, 183, 3, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 183, 3, 0.03) 1px, transparent 1px);
+      background-size: 32px 32px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dr. Shahadat Hussain — Materials Science & Data-Driven Manufacturing</title>
-<meta name="description" content="Advanced materials scientist building Python-driven pipelines for TPMS metamaterials, LPBF additive manufacturing, NiTi shape memory alloys, and ML-based defect prediction. Abu Dhabi, UAE.">
-<meta property="og:title" content="Dr. Shahadat Hussain — Computational Materials Science">
-<meta property="og:description" content="Code, simulation, and data-driven workflows for advanced materials and additive manufacturing.">
-<meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⬡</text></svg>">
-<link rel="canonical" href="https://www.shahadathussain.com/" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#0a0e14; --surface:#101720; --surface-2:#141d29;
-    --border:#1e2a3a; --border-hi:#2b3d54;
-    --text:#e6edf3; --muted:#8b98a5; --faint:#5c6b7a;
-    --accent:#4cc9f0; --accent-dim:rgba(76,201,240,.12);
-    --green:#7ee787; --green-dim:rgba(126,231,135,.1);
-    --mono:'JetBrains Mono',ui-monospace,monospace;
-    --sans:'Inter',system-ui,sans-serif;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
-  ::selection{background:var(--accent);color:var(--bg)}
+    /* Industrial Hazard Stripes */
+    .hazard-stripe {
+      background: repeating-linear-gradient(
+        -45deg,
+        #ffb703,
+        #ffb703 12px,
+        #0f1318 12px,
+        #0f1318 24px
+      );
+    }
+    
+    .hazard-stripe-subtle {
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(255, 183, 3, 0.2),
+        rgba(255, 183, 3, 0.2) 8px,
+        transparent 8px,
+        transparent 16px
+      );
+    }
 
-  /* ---------- layout ---------- */
-  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-  section{padding:88px 0}
-  h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:700;letter-spacing:-.02em;margin-bottom:12px}
-  .kicker{font-family:var(--mono);font-size:.8rem;color:var(--accent);letter-spacing:.12em;text-transform:uppercase;display:block;margin-bottom:14px}
-  .lead{color:var(--muted);max-width:640px;font-size:1.02rem}
+    /* Beveled / Chamfered Industrial Corners */
+    .chamfer-box {
+      clip-path: polygon(
+        0 0, 
+        calc(100% - 14px) 0, 
+        100% 14px, 
+        100% 100%, 
+        14px 100%, 
+        0 calc(100% - 14px)
+      );
+    }
 
-  /* ---------- nav ---------- */
-  nav{position:sticky;top:0;z-index:50;background:rgba(10,14,20,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:62px}
-  .logo{font-family:var(--mono);font-weight:700;font-size:.95rem;color:var(--text);text-decoration:none}
-  .logo span{color:var(--accent)}
-  .nav-links{display:flex;gap:26px}
-  .nav-links a{color:var(--muted);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .2s}
-  .nav-links a:hover{color:var(--text)}
-  @media(max-width:640px){.nav-links{display:none}}
+    .chamfer-btn {
+      clip-path: polygon(
+        0 0, 
+        calc(100% - 10px) 0, 
+        100% 10px, 
+        100% 100%, 
+        10px 100%, 
+        0 calc(100% - 10px)
+      );
+    }
 
-  /* ---------- hero ---------- */
-  header{position:relative;padding:110px 0 96px;overflow:hidden}
-  header::before{content:"";position:absolute;inset:0;
-    background-image:
-      radial-gradient(circle at 18% 22%,rgba(76,201,240,.09),transparent 42%),
-      radial-gradient(circle at 82% 8%,rgba(126,231,135,.06),transparent 40%),
-      linear-gradient(rgba(230,237,243,.028) 1px,transparent 1px),
-      linear-gradient(90deg,rgba(230,237,243,.028) 1px,transparent 1px);
-    background-size:100% 100%,100% 100%,44px 44px,44px 44px;pointer-events:none}
-  .hero{position:relative}
-  .hero .badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;color:var(--green);
-    background:var(--green-dim);border:1px solid rgba(126,231,135,.25);border-radius:999px;padding:6px 14px;margin-bottom:26px}
-  .badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-  h1{font-size:clamp(2.2rem,5.4vw,3.6rem);font-weight:800;letter-spacing:-.03em;line-height:1.12}
-  h1 .grad{background:linear-gradient(92deg,var(--accent),var(--green));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .type-line{font-family:var(--mono);font-size:clamp(.95rem,2vw,1.15rem);color:var(--accent);margin-top:20px;min-height:1.8em}
-  .type-line .cursor{display:inline-block;width:9px;background:var(--accent);animation:blink 1s step-end infinite;margin-left:2px}
-  @keyframes blink{50%{opacity:0}}
-  .hero p.sub{margin-top:22px;color:var(--muted);max-width:620px;font-size:1.05rem}
-  .hero-cta{display:flex;gap:14px;margin-top:36px;flex-wrap:wrap}
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;font-weight:600;font-size:.92rem;text-decoration:none;transition:all .2s;border:1px solid transparent}
-  .btn-primary{background:var(--accent);color:#06121a}
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(76,201,240,.3)}
-  .btn-ghost{border-color:var(--border-hi);color:var(--text)}
-  .btn-ghost:hover{border-color:var(--accent);color:var(--accent)}
+    /* CAD Blueprint Canvas Overlay */
+    .blueprint-grid {
+      background-image: 
+        radial-gradient(circle, rgba(56, 189, 248, 0.15) 1px, transparent 1px),
+        linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+      background-size: 16px 16px, 32px 32px, 32px 32px;
+    }
 
- 
-   /* ---------- about ---------- */
-  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
-  @media(max-width:820px){.about-grid{grid-template-columns:1fr}}
-  .about-grid p{color:var(--muted);margin-bottom:16px}
-  .about-grid p strong{color:var(--text)}
-  
-  /* Right column containing profile and stats */
-  .right-col{display:flex;flex-direction:column;gap:24px}
-  
-  /* Profile Card */
-  .profile-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;transition:all .25s}
-  .profile-card:hover{border-color:var(--border-hi);transform:translateY(-3px)}
-  .profile-img-wrap{width:140px;height:140px;border-radius:50%;padding:4px;background:linear-gradient(135deg, var(--accent), var(--green));box-shadow:0 8px 24px rgba(76,201,240,.15)}
-  .profile-img-wrap img{width:100%;height:100%;border-radius:50%;object-fit:cover;display:block;background:var(--bg)}
-  .profile-name{font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
-  .profile-role{font-family:var(--mono);font-size:.8rem;color:var(--muted);text-align:center}
-  
-  .stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  .stat{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:20px}
-  .stat b{display:block;font-size:1.7rem;font-weight:800;letter-spacing:-.02em}
-  .stat span{font-size:.8rem;color:var(--faint);font-family:var(--mono)}
-  .stat:nth-child(odd) b{color:var(--accent)}
-  .stat:nth-child(even) b{color:var(--green)}
+    /* Scroll animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.on {
+      opacity: 1;
+      transform: translateY(0);
+    }
 
-  /* ---------- stack ---------- */
-  .stack-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:40px}
-  .stack-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;transition:all .25s}
-  .stack-card:hover{border-color:var(--border-hi);transform:translateY(-3px)}
-  .stack-card h3{font-family:var(--mono);font-size:.85rem;color:var(--accent);margin-bottom:14px;letter-spacing:.05em}
-  .stack-card ul{list-style:none}
-  .stack-card li{font-size:.9rem;color:var(--muted);padding:5px 0;display:flex;gap:10px}
-  .stack-card li::before{content:"▹";color:var(--green)}
+    /* Custom Terminal scrollbars */
+    pre::-webkit-scrollbar {
+      height: 6px;
+      background: #111827;
+    }
+    pre::-webkit-scrollbar-thumb {
+      background: #374151;
+      border-radius: 3px;
+    }
 
-  /* ---------- terminal / code ---------- */
-  .code-block-wrap{margin-top:40px}
-  .terminal{background:#0d1117;border:1px solid var(--border-hi);border-radius:14px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.45)}
-  .term-bar{display:flex;align-items:center;gap:8px;padding:13px 18px;background:#151b23;border-bottom:1px solid var(--border)}
-  .term-bar i{width:12px;height:12px;border-radius:50%;display:block}
-  .term-bar i:nth-child(1){background:#ff5f57}.term-bar i:nth-child(2){background:#febc2e}.term-bar i:nth-child(3){background:#28c840}
-  .term-title{font-family:var(--mono);font-size:.72rem;color:var(--faint);margin-left:10px}
-  pre{padding:26px 28px;overflow-x:auto;font-family:var(--mono);font-size:.86rem;line-height:1.75;tab-size:4}
-  .c{color:#8b949e}.k{color:#ff7b72}.f{color:#d2a8ff}.s{color:#a5d6ff}.n{color:#79c0ff}.v{color:#e6edf3}.o{color:#79c0ff}
-
-  /* ---------- research ---------- */
-  .pub{border-left:2px solid var(--border);padding:22px 0 22px 28px;position:relative;transition:border-color .2s}
-  .pub:hover{border-left-color:var(--accent)}
-  .pub .year{font-family:var(--mono);font-size:.75rem;color:var(--green)}
-  .pub h3{font-size:1.02rem;font-weight:650;margin:8px 0}
-  .pub p{color:var(--muted);font-size:.88rem;max-width:720px}
-  .pub .meta{font-family:var(--mono);font-size:.75rem;color:var(--faint);margin-top:8px}
-  .pubs{margin-top:36px}
-
-  /* ---------- contact ---------- */
-  .contact{text-align:center}
-  .contact .lead{margin:0 auto 36px}
-  .contact-links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-
-  /* ---------- footer ---------- */
-  footer{border-top:1px solid var(--border);padding:34px 0}
-  .foot{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-  .foot small{color:var(--faint);font-size:.8rem}
-  .motto{font-family:var(--mono);font-style:italic;font-size:.78rem;color:var(--faint);letter-spacing:.02em}
-  .motto b{color:var(--muted);font-weight:400}
-
-  /* ---------- reveal animation ---------- */
-  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-  .reveal.on{opacity:1;transform:none}
-</style>
+    /* Glowing LED Status Indicator */
+    .led-pulse {
+      box-shadow: 0 0 10px #10b981;
+      animation: ledBlink 2s infinite alternate;
+    }
+    @keyframes ledBlink {
+      0% { opacity: 0.4; }
+      100% { opacity: 1; }
+    }
+  </style>
 </head>
-<body>
+<body class="min-h-screen flex flex-col justify-between selection:bg-hazard selection:text-black">
 
-<nav>
-  <div class="wrap nav-inner">
-    <a class="logo" href="#top">shahadat<span>.</span>hussain<span>~$</span></a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#stack">Stack</a>
-      <a href="#code">Code</a>
-      <a href="#research">Research</a>
-      <a href="#contact">Contact</a>
+  <!-- TOP INDUSTRIAL CONTROL BANNER -->
+  <div class="w-full bg-steel border-b border-steel-border text-xs font-mono py-1 px-4 flex justify-between items-center text-slate-400">
+    <div class="flex items-center space-x-3">
+      <span class="inline-flex items-center text-hazard font-bold">
+        <span class="w-2 h-2 rounded-full bg-hazard mr-1.5 animate-ping"></span>
+        SYSTEM_STATUS // ONLINE
+      </span>
+      <span class="hidden md:inline text-slate-500">|</span>
+      <span class="hidden md:inline">FACILITY: NYU ABU DHABI AM LAB</span>
+      <span class="hidden lg:inline text-slate-500">|</span>
+      <span class="hidden lg:inline">ATMOSPHERE: ARGON INERT (Ar 99.999%)</span>
+    </div>
+    <div class="flex items-center space-x-4">
+      <span id="telemetry-clock">00:00:00 UTC</span>
+      <span class="bg-hazard/10 text-hazard px-2 py-0.5 border border-hazard/30 uppercase tracking-widest text-[10px]">ISO 9001 / AS9100 COMPLIANT</span>
     </div>
   </div>
-</nav>
 
-<header id="top">
-  <div class="wrap hero">
-    <span class="badge"><span class="dot"></span> Advanced-materials :: v2026.08 :: Abu Dhabi, UAE</span>
-    <h1>Engineering materials<br>with <span class="grad">code, simulation &amp; data.</span></h1>
-    <div class="type-line">&gt; <span id="typed"></span><span class="cursor">&nbsp;</span></div>
-    <p class="sub">I'm Dr. Shahadat Hussain — a materials scientist who treats computation as a first-class laboratory instrument. I design algorithms that generate metamaterial geometries, simulate their behavior, and learn from manufacturing telemetry to make additive manufacturing more predictable.</p>
-    <div class="hero-cta">
+  <!-- HAZARD ACCENT BAR -->
+  <div class="h-1.5 w-full hazard-stripe"></div>
 
-      <a class="btn btn-ghost" href="https://github.com/drshahadathussain" target="_blank" rel="noopener">GitHub ↗</a>
-    </div>
-  </div>
-</header>
+  <!-- NAVIGATION NAVBAR -->
+  <nav class="sticky top-0 z-40 bg-industrial-bg/90 backdrop-blur-md border-b border-steel-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#top" class="flex items-center space-x-2 group">
+        <div class="w-8 h-8 bg-hazard text-black font-condensed font-extrabold text-xl flex items-center justify-center chamfer-btn group-hover:bg-yellow-400 transition-colors">
+          SH
+        </div>
+        <div>
+          <span class="font-condensed font-bold text-xl tracking-wider text-white uppercase block leading-none">DR. SHAHADAT HUSSAIN</span>
+          <span class="font-mono text-[10px] text-hazard tracking-widest block uppercase">ADVANCED MATERIALS &amp; LPBF R&amp;D</span>
+        </div>
+      </a>
 
-<section id="about">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="reveal">
-        <span class="kicker">// about</span>
-        <h2>The lab bench is a terminal.</h2>
-        <p>Modern materials engineering lives at the intersection of <strong>geometry, physics, and data</strong>. My computational work spans the full loop: generating triply periodic minimal surface (TPMS) fields, discretizing them into printable meshes, simulating their mechanical response, and closing the loop with machine-learning models trained on real laser powder bed fusion (LPBF) process data.</p>
-        <p>This approach lets me do things that are impractical experimentally — sweep hundreds of lattice parameters overnight, predict where balling or spattering will occur before a single laser fires, and quantify microstructural features directly from SEM imagery instead of eyeballing them.</p>
-        <p>For industry partners in aerospace and defense, this translates to three things: <strong>faster iteration, lighter parts, and qualified processes.</strong></p>
+      <!-- Desktop Links -->
+      <div class="hidden md:flex items-center space-x-1 font-mono text-xs uppercase tracking-wider">
+        <a href="#about" class="px-3 py-2 text-slate-300 hover:text-hazard hover:bg-steel-light transition-colors border-l-2 border-transparent hover:border-hazard">01. ABOUT</a>
+        <a href="#telemetry" class="px-3 py-2 text-slate-300 hover:text-hazard hover:bg-steel-light transition-colors border-l-2 border-transparent hover:border-hazard">02. TELEMETRY</a>
+        <a href="#stack" class="px-3 py-2 text-slate-300 hover:text-hazard hover:bg-steel-light transition-colors border-l-2 border-transparent hover:border-hazard">03. TECH_STACK</a>
+        <a href="#code" class="px-3 py-2 text-slate-300 hover:text-hazard hover:bg-steel-light transition-colors border-l-2 border-transparent hover:border-hazard">04. ALGORITHM</a>
+        <a href="#research" class="px-3 py-2 text-slate-300 hover:text-hazard hover:bg-steel-light transition-colors border-l-2 border-transparent hover:border-hazard">05. PUBLICATIONS</a>
+        <a href="#contact" class="px-3 py-2 bg-hazard text-black font-bold hover:bg-yellow-400 transition-colors chamfer-btn ml-2">CONTACT_SPEC</a>
       </div>
-      
-      <div class="right-col reveal">
-        <!-- The New Profile Card -->
-        <div class="profile-card">
-          <div class="profile-img-wrap">
-            <!-- 👇 REPLACE THE 'src' BELOW WITH YOUR IMAGE LINK OR FILENAME -->
-            <img src="dr-shahadat-Hussain.png" alt="Dr. Shahadat Hussain">
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="top" class="relative py-16 lg:py-24 overflow-hidden border-b border-steel-border bg-gradient-to-b from-industrial-bg via-steel/40 to-industrial-bg">
+    <!-- Blueprint Grid Background overlay -->
+    <div class="absolute inset-0 blueprint-grid opacity-30 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left Hero Text Column -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center space-x-2 bg-steel-light border border-steel-border px-3 py-1 text-xs font-mono text-hazard uppercase tracking-wider chamfer-btn">
+            <span class="w-2 h-2 rounded-full bg-ok-green led-pulse"></span>
+            <span>SYSTEM ACTIVE // VER: 2026.08 // ABU DHABI, UAE</span>
           </div>
-          <div class="profile-name">Dr. Shahadat Hussain</div>
-          <div class="profile-role">R&D and Materials Engineer</div>
+
+          <h1 class="font-condensed text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight uppercase leading-none text-white">
+            ENGINEERING MATERIALS WITH <span class="text-transparent bg-clip-text bg-gradient-to-r from-hazard via-yellow-200 to-blueprint-cyan">CODE, SIMULATION &amp; DATA.</span>
+          </h1>
+
+          <!-- Terminal Typing Effect Box -->
+          <div class="bg-black/80 border border-steel-border p-3 font-mono text-sm sm:text-base text-hazard flex items-center space-x-2 chamfer-box">
+            <span class="text-slate-500">&gt;</span>
+            <span id="typed"></span>
+            <span class="w-2.5 h-5 bg-hazard inline-block animate-pulse"></span>
+          </div>
+
+          <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            I'm <strong>Dr. Shahadat Hussain</strong> — an Associate Research Scientist treating computation as a first-class laboratory instrument. I design algorithms that generate metamaterial geometries, simulate their mechanical response, and learn from manufacturing telemetry to make additive manufacturing predictable and defect-free.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#research" class="bg-hazard hover:bg-yellow-400 text-black font-condensed font-bold text-lg px-6 py-3 uppercase tracking-wider transition-all shadow-lg shadow-hazard/10 flex items-center space-x-2 chamfer-btn">
+              <span>EXPLORE RESEARCH PIPELINES</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
+            <a href="https://github.com/drshahadathussain" target="_blank" rel="noopener" class="bg-steel hover:bg-steel-light border border-steel-border text-white font-mono text-sm px-5 py-3 transition-all flex items-center space-x-2 chamfer-btn">
+              <svg class="w-5 h-5 text-hazard" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              <span>GITHUB_REPOS</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Existing Stats Grid -->
-        <div class="stats">
-          <div class="stat"><b>6+</b><span>years_r&amp;d_experience</span></div>
-          <div class="stat"><b>3</b><span>lattice_topologies_mastered</span></div>
-          <div class="stat"><b>10+</b><span>publications &amp; datasets</span></div>
-          <div class="stat"><b>∞</b><span>process_parameter_sweeps</span></div>
+        <!-- Right Quick Telemetry Console Widget -->
+        <div class="lg:col-span-5">
+          <div class="bg-steel/90 border-2 border-steel-border p-5 rounded-none chamfer-box shadow-2xl relative">
+            <div class="absolute top-0 right-0 bg-hazard text-black font-mono text-[10px] font-bold px-2 py-0.5 uppercase">
+              CONSOLE_MONITOR
+            </div>
+            
+            <h3 class="font-condensed font-bold text-lg text-white uppercase tracking-wider mb-4 border-b border-steel-border pb-2 flex items-center justify-between">
+              <span>PROCESS TELEMETRY</span>
+              <span class="text-xs font-mono text-hazard font-normal">LPBF-NITI-01</span>
+            </h3>
+
+            <div class="space-y-4 font-mono text-xs">
+              <!-- Laser Power Gauge -->
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>LASER POWER (P)</span>
+                  <span class="text-hazard font-bold" id="gauge-laser-val">225 W</span>
+                </div>
+                <div class="w-full bg-black/60 h-2.5 border border-steel-border p-0.5">
+                  <div id="gauge-laser-bar" class="bg-gradient-to-r from-blueprint-cyan to-hazard h-full transition-all duration-500" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <!-- Scan Speed Gauge -->
+              <div>
+                <div class="flex justify-between text-slate-300 mb-1">
+                  <span>SCAN SPEED (v)</span>
+                  <span class="text-blueprint-cyan font-bold" id="gauge-speed-val">950 mm/s</span>
+                </div>
+                <div class="w-full bg-black/60 h-2.5 border border-steel-border p-0.5">
+                  <div id="gauge-speed-bar" class="bg-blueprint-cyan h-full transition-all duration-500" style="width: 63%;"></div>
+                </div>
+              </div>
+
+              <!-- Volumetric Energy Density -->
+              <div class="bg-black/60 p-3 border border-steel-border grid grid-cols-2 gap-2 text-center">
+                <div>
+                  <span class="block text-[10px] text-slate-400">ENERGY DENSITY (VED)</span>
+                  <span id="ved-display" class="font-bold text-lg text-hazard">59.2 J/mm³</span>
+                </div>
+                <div>
+                  <span class="block text-[10px] text-slate-400">DEFECT PROBABILITY</span>
+                  <span id="defect-display" class="font-bold text-lg text-ok-green">0.03% (LOW)</span>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between text-[11px] text-slate-400 pt-1">
+                <span>MAT: NiTi Shape Memory Alloy</span>
+                <button id="sim-btn" onclick="triggerSimulation()" class="bg-steel-light hover:bg-steel text-hazard border border-steel-border px-2 py-1 uppercase text-[10px] transition-colors">
+                  ⚡ TRIGGER PARAM SWEEP
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: ABOUT & PROFILE -->
+  <section id="about" class="py-16 bg-industrial-bg border-b border-steel-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-3 mb-8">
+        <span class="font-mono text-hazard font-bold text-sm tracking-widest uppercase">// 01. ABOUT</span>
+        <div class="h-px bg-steel-border flex-1"></div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Bio Content -->
+        <div class="lg:col-span-7 space-y-5 reveal">
+          <h2 class="font-condensed text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+            The lab bench is a terminal.
+          </h2>
+
+          <p class="text-slate-300 leading-relaxed">
+            Modern materials engineering lives at the intersection of <strong class="text-white">geometry, physics, and data</strong>. My computational work spans the full loop: generating triply periodic minimal surface (TPMS) fields, discretizing them into printable meshes, simulating their mechanical response, and closing the loop with machine-learning models trained on real laser powder bed fusion (LPBF) process data.
+          </p>
+
+          <p class="text-slate-300 leading-relaxed">
+            This approach lets me do things that are impractical experimentally — sweep hundreds of lattice parameters overnight, predict where balling or spattering will occur before a single laser fires, and quantify microstructural features directly from SEM imagery instead of eyeballing them.
+          </p>
+
+          <div class="p-4 bg-steel/50 border-l-4 border-hazard text-slate-200 font-mono text-sm">
+            "For industry partners in aerospace and defense, this translates to three things: 
+            <strong class="text-hazard">faster iteration, lighter parts, and qualified processes.</strong>"
+          </div>
+
+          <!-- Quick Credential Chips -->
+          <div class="pt-2 flex flex-wrap gap-2 text-xs font-mono">
+            <span class="bg-steel border border-steel-border text-slate-300 px-3 py-1">PhD - AcSIR / CSIR</span>
+            <span class="bg-steel border border-steel-border text-slate-300 px-3 py-1">Postdoc - Khalifa Univ</span>
+            <span class="bg-steel border border-steel-border text-slate-300 px-3 py-1">NYU Abu Dhabi</span>
+            <span class="bg-steel border border-steel-border text-slate-300 px-3 py-1">IBM Data Science Cert</span>
+          </div>
+        </div>
+
+        <!-- Profile Card & Industrial Metrics Grid -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          
+          <!-- Industrial Profile Card -->
+          <div class="bg-steel/80 border-2 border-steel-border p-6 chamfer-box relative flex flex-col sm:flex-row items-center gap-5">
+            <div class="relative">
+              <div class="w-28 h-28 p-1 bg-hazard chamfer-box">
+                <img src="dr-shahadat-Hussain.png" alt="Dr. Shahadat Hussain" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300" onerror="this.onerror=null; this.src='https://placehold.co/300x300/1e2630/ffb703?text=DR.+HUSSAIN';">
+              </div>
+              <span class="absolute -bottom-2 -right-2 bg-ok-green text-black font-mono font-bold text-[9px] px-1.5 py-0.5 border border-black">QUALIFIED</span>
+            </div>
+            
+            <div class="text-center sm:text-left space-y-1">
+              <h3 class="font-condensed font-bold text-2xl text-white uppercase tracking-wider">DR. SHAHADAT HUSSAIN</h3>
+              <p class="font-mono text-xs text-hazard uppercase">ASSOCIATE RESEARCH SCIENTIST</p>
+              <p class="text-slate-400 text-xs font-mono pt-1">Additive Manufacturing &amp; Metamaterials</p>
+              <div class="pt-2 text-[11px] font-mono text-slate-400">
+                ORCID: <a href="https://orcid.org/0000-0002-4355-2169" target="_blank" class="text-blueprint-cyan hover:underline">0000-0002-4355-2169</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stats Grid -->
+          <div class="grid grid-cols-2 gap-3 font-mono">
+            <div class="bg-steel/60 border border-steel-border p-4 text-center chamfer-btn">
+              <span class="block text-3xl font-extrabold text-hazard font-condensed">6+</span>
+              <span class="text-[10px] text-slate-400 uppercase tracking-widest block">YEARS_R&amp;D_EXP</span>
+            </div>
+            <div class="bg-steel/60 border border-steel-border p-4 text-center chamfer-btn">
+              <span class="block text-3xl font-extrabold text-blueprint-cyan font-condensed">3+</span>
+              <span class="text-[10px] text-slate-400 uppercase tracking-widest block">TPMS_TOPOLOGIES</span>
+            </div>
+            <div class="bg-steel/60 border border-steel-border p-4 text-center chamfer-btn">
+              <span class="block text-3xl font-extrabold text-ok-green font-condensed">10+</span>
+              <span class="text-[10px] text-slate-400 uppercase tracking-widest block">PUBLICATIONS</span>
+            </div>
+            <div class="bg-steel/60 border border-steel-border p-4 text-center chamfer-btn">
+              <span class="block text-3xl font-extrabold text-yellow-200 font-condensed">∞</span>
+              <span class="text-[10px] text-slate-400 uppercase tracking-widest block">PARAM_SWEEPS</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: INTERACTIVE TPMS PARAMETER PREVIEW (INTERACTIVE ADD-ON) -->
+  <section id="telemetry" class="py-16 bg-steel/30 border-b border-steel-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-3 mb-8">
+        <span class="font-mono text-hazard font-bold text-sm tracking-widest uppercase">// 02. LIVE TPMS GEOMETRY &amp; TELEMETRY SIMULATOR</span>
+        <div class="h-px bg-steel-border flex-1"></div>
+      </div>
+
+      <div class="bg-steel/80 border-2 border-steel-border p-6 chamfer-box">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Visual Canvas / Mesh Preview -->
+          <div class="lg:col-span-6 bg-black p-4 border border-steel-border relative">
+            <div class="absolute top-2 left-2 bg-steel-light border border-steel-border px-2 py-0.5 text-[10px] font-mono text-blueprint-cyan">
+              2D_ISOFIELD_PREVIEW
+            </div>
+            <canvas id="tpmsCanvas" class="w-full h-64 bg-slate-950 block rounded-none border border-slate-800"></canvas>
+            <div class="flex justify-between text-[11px] font-mono text-slate-400 mt-2">
+              <span>FIELD: GYROID ISO-LEVEL</span>
+              <span id="mesh-nodes-count">CELLS: 128 x 128</span>
+            </div>
+          </div>
+
+          <!-- Live Parameter Controls -->
+          <div class="lg:col-span-6 space-y-5 font-mono">
+            <h3 class="font-condensed text-2xl font-bold text-white uppercase tracking-wider">
+              TPMS LATTICE PARAMETER CONTROL
+            </h3>
+            <p class="text-xs text-slate-300">
+              Adjust parameters in real-time to simulate relative density and iso-surface threshold offsets for laser powder bed fusion (LPBF).
+            </p>
+
+            <!-- Slider 1: Iso Threshold -->
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs">
+                <span class="text-slate-300">ISO THRESHOLD (t)</span>
+                <span id="val-threshold" class="text-hazard font-bold">0.35</span>
+              </div>
+              <input type="range" id="input-threshold" min="-0.8" max="0.8" step="0.05" value="0.35" class="w-full accent-hazard cursor-pointer">
+            </div>
+
+            <!-- Slider 2: Frequency / Grid Density -->
+            <div class="space-y-1">
+              <div class="flex justify-between text-xs">
+                <span class="text-slate-300">CELL FREQUENCY (ω)</span>
+                <span id="val-freq" class="text-blueprint-cyan font-bold">2.5</span>
+              </div>
+              <input type="range" id="input-freq" min="1.0" max="5.0" step="0.5" value="2.5" class="w-full accent-blueprint-cyan cursor-pointer">
+            </div>
+
+            <!-- Calculated Metrics -->
+            <div class="grid grid-cols-3 gap-2 bg-black/60 p-3 border border-steel-border text-center text-xs">
+              <div>
+                <span class="text-[10px] text-slate-400 block">EST. RELATIVE DENSITY</span>
+                <span id="calc-density" class="font-bold text-white">28.4 %</span>
+              </div>
+              <div>
+                <span class="text-[10px] text-slate-400 block">POROSITY</span>
+                <span id="calc-porosity" class="font-bold text-hazard">71.6 %</span>
+              </div>
+              <div>
+                <span class="text-[10px] text-slate-400 block">PRINTABILITY</span>
+                <span id="calc-status" class="font-bold text-ok-green">OPTIMAL</span>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="stack" style="background:var(--surface)">
-  <div class="wrap">
-    <span class="kicker">// tech_stack</span>
-    <h2>Tools of the trade</h2>
-    <p class="lead">A scientific-computing stack purpose-built for computational materials design and manufacturing analytics.</p>
-    <div class="stack-grid">
-      <div class="stack-card reveal">
-        <h3>language / core</h3>
-        <ul>
-          <li>Python (NumPy, SciPy, pandas)</li>
-          <li>MATLAB / numerical methods</li>
-          <li>C++ for performance-critical kernels</li>
-          <li>Bash &amp; Linux HPC workflows</li>
-        </ul>
+  <!-- SECTION 3: TECH STACK -->
+  <section id="stack" class="py-16 bg-industrial-bg border-b border-steel-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-3 mb-8">
+        <span class="font-mono text-hazard font-bold text-sm tracking-widest uppercase">// 03. TECH_STACK</span>
+        <div class="h-px bg-steel-border flex-1"></div>
       </div>
-      <div class="stack-card reveal">
-        <h3>ml / informatics</h3>
-        <ul>
-          <li>scikit-learn · defect classification</li>
-          <li>PyTorch · surrogate modeling</li>
-          <li>OpenCV · SEM image quantification</li>
-          <li>Materials data pipelines &amp; EDA</li>
-        </ul>
+
+      <div class="mb-8">
+        <h2 class="font-condensed text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+          Tools of the trade
+        </h2>
+        <p class="text-slate-400 max-w-2xl text-sm sm:text-base font-sans">
+          A scientific-computing stack purpose-built for computational materials design and manufacturing analytics.
+        </p>
       </div>
-      <div class="stack-card reveal">
-        <h3>geometry / simulation</h3>
-        <ul>
-          <li>Implicit surfaces &amp; marching cubes</li>
-          <li>nTopology-style lattice generation</li>
-          <li>FEA scripting (Abaqus / ANSYS)</li>
-          <li>STL / 3MF mesh processing</li>
-        </ul>
-      </div>
-      <div class="stack-card reveal">
-        <h3>engineering / ops</h3>
-        <ul>
-          <li>Git, GitHub Actions, reproducible runs</li>
-          <li>LaTeX &amp; scientific reporting</li>
-          <li>LPBF process telemetry analysis</li>
-          <li>Data-driven AM parameter design</li>
-        </ul>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Stack Card 1 -->
+        <div class="bg-steel/60 border-2 border-steel-border p-5 hover:border-hazard transition-all duration-300 chamfer-box reveal">
+          <div class="flex items-center space-x-2 text-hazard font-mono text-xs font-bold uppercase mb-3 pb-2 border-b border-steel-border">
+            <span class="w-2 h-2 bg-hazard"></span>
+            <span>LANGUAGE / CORE</span>
+          </div>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center space-x-2"><span class="text-hazard">▸</span><span>Python (NumPy, SciPy, pandas)</span></li>
+            <li class="flex items-center space-x-2"><span class="text-hazard">▸</span><span>MATLAB / Numerical Methods</span></li>
+            <li class="flex items-center space-x-2"><span class="text-hazard">▸</span><span>C++ for Performance Kernels</span></li>
+            <li class="flex items-center space-x-2"><span class="text-hazard">▸</span><span>Bash &amp; Linux HPC Workflows</span></li>
+          </ul>
+        </div>
+
+        <!-- Stack Card 2 -->
+        <div class="bg-steel/60 border-2 border-steel-border p-5 hover:border-hazard transition-all duration-300 chamfer-box reveal">
+          <div class="flex items-center space-x-2 text-blueprint-cyan font-mono text-xs font-bold uppercase mb-3 pb-2 border-b border-steel-border">
+            <span class="w-2 h-2 bg-blueprint-cyan"></span>
+            <span>ML / INFORMATICS</span>
+          </div>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center space-x-2"><span class="text-blueprint-cyan">▸</span><span>scikit-learn · Defect Classify</span></li>
+            <li class="flex items-center space-x-2"><span class="text-blueprint-cyan">▸</span><span>PyTorch · Surrogate Models</span></li>
+            <li class="flex items-center space-x-2"><span class="text-blueprint-cyan">▸</span><span>OpenCV · SEM Quantification</span></li>
+            <li class="flex items-center space-x-2"><span class="text-blueprint-cyan">▸</span><span>Materials Pipelines &amp; EDA</span></li>
+          </ul>
+        </div>
+
+        <!-- Stack Card 3 -->
+        <div class="bg-steel/60 border-2 border-steel-border p-5 hover:border-hazard transition-all duration-300 chamfer-box reveal">
+          <div class="flex items-center space-x-2 text-ok-green font-mono text-xs font-bold uppercase mb-3 pb-2 border-b border-steel-border">
+            <span class="w-2 h-2 bg-ok-green"></span>
+            <span>GEOMETRY / FEA</span>
+          </div>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center space-x-2"><span class="text-ok-green">▸</span><span>Implicit Surfaces &amp; Marching Cubes</span></li>
+            <li class="flex items-center space-x-2"><span class="text-ok-green">▸</span><span>nTopology Lattice Design</span></li>
+            <li class="flex items-center space-x-2"><span class="text-ok-green">▸</span><span>FEA Scripting (Abaqus/ANSYS)</span></li>
+            <li class="flex items-center space-x-2"><span class="text-ok-green">▸</span><span>STL / 3MF Mesh Processing</span></li>
+          </ul>
+        </div>
+
+        <!-- Stack Card 4 -->
+        <div class="bg-steel/60 border-2 border-steel-border p-5 hover:border-hazard transition-all duration-300 chamfer-box reveal">
+          <div class="flex items-center space-x-2 text-yellow-200 font-mono text-xs font-bold uppercase mb-3 pb-2 border-b border-steel-border">
+            <span class="w-2 h-2 bg-yellow-200"></span>
+            <span>ENGINEERING / OPS</span>
+          </div>
+          <ul class="space-y-2 text-xs font-mono text-slate-300">
+            <li class="flex items-center space-x-2"><span class="text-yellow-200">▸</span><span>Git, Actions, Reproducibility</span></li>
+            <li class="flex items-center space-x-2"><span class="text-yellow-200">▸</span><span>LaTeX &amp; Scientific Reporting</span></li>
+            <li class="flex items-center space-x-2"><span class="text-yellow-200">▸</span><span>LPBF Telemetry Analysis</span></li>
+            <li class="flex items-center space-x-2"><span class="text-yellow-200">▸</span><span>Data-Driven AM Parameters</span></li>
+          </ul>
+        </div>
+
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="code" style="background:var(--surface)">
-  <div class="wrap">
-    <span class="kicker">// code_showcase</span>
-    <h2>From equation to print file</h2>
-    <p class="lead">The heart of the lattice generator — a gyroid is just three lines of trigonometry until you discretize it, threshold it, and hand it to a printer.</p>
-    <div class="code-block-wrap reveal">
-      <div class="terminal">
-        <div class="term-bar"><i></i><i></i><i></i><span class="term-title">tpms_generator.py — computational-materials</span></div>
-<pre><span class="k">import</span> <span class="v">numpy</span> <span class="k">as</span> <span class="v">np</span>
+  <!-- SECTION 4: CODE SHOWCASE -->
+  <section id="code" class="py-16 bg-steel/20 border-b border-steel-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-3 mb-8">
+        <span class="font-mono text-hazard font-bold text-sm tracking-widest uppercase">// 04. CODE_SHOWCASE</span>
+        <div class="h-px bg-steel-border flex-1"></div>
+      </div>
 
-<span class="k">def</span> <span class="f">gyroid</span>(<span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span>):
-    <span class="s">"""Implicit gyroid surface — F(x, y, z) = t."""</span>
-    <span class="k">return</span> (<span class="v">np</span>.<span class="f">sin</span>(<span class="v">x</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">y</span>)
-          <span class="o">+</span> <span class="v">np</span>.<span class="f">sin</span>(<span class="v">y</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">z</span>)
-          <span class="o">+</span> <span class="v">np</span>.<span class="f">sin</span>(<span class="v">z</span>) <span class="o">*</span> <span class="v">np</span>.<span class="f">cos</span>(<span class="v">x</span>))
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-6">
+        <div class="lg:col-span-8">
+          <h2 class="font-condensed text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+            From equation to print file
+          </h2>
+          <p class="text-slate-400 text-sm sm:text-base">
+            The heart of the lattice generator — a gyroid is just three lines of trigonometry until you discretize it, threshold it, and hand it to a printer.
+          </p>
+        </div>
+        <div class="lg:col-span-4 flex justify-end">
+          <button onclick="copyCode()" id="copy-btn" class="bg-steel border border-steel-border hover:bg-steel-light text-hazard font-mono text-xs px-4 py-2 flex items-center space-x-2 chamfer-btn transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            <span id="copy-text">COPY_SCRIPT.PY</span>
+          </button>
+        </div>
+      </div>
 
-<span class="k">def</span> <span class="f">sample_field</span>(<span class="v">level_fn</span>, <span class="v">n</span><span class="o">=</span><span class="n">160</span>, <span class="v">threshold</span><span class="o">=</span><span class="n">0.35</span>):
-    <span class="s">"""Sample the level-set field on a regular grid.
+      <!-- CODE TERMINAL WINDOW -->
+      <div class="bg-slate-950 border-2 border-steel-border rounded-none chamfer-box shadow-2xl reveal overflow-hidden">
+        <div class="bg-steel py-2.5 px-4 border-b border-steel-border flex items-center justify-between font-mono text-xs">
+          <div class="flex items-center space-x-2">
+            <span class="w-3 h-3 rounded-full bg-alert-red inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-hazard inline-block"></span>
+            <span class="w-3 h-3 rounded-full bg-ok-green inline-block"></span>
+            <span class="text-slate-400 ml-2 text-[11px]">tpms_generator.py — computational-materials</span>
+          </div>
+          <span class="text-hazard text-[10px] font-bold">PYTHON 3.10 // NUMPY</span>
+        </div>
 
+<pre class="p-6 font-mono text-xs sm:text-sm text-slate-200 overflow-x-auto leading-relaxed"><code id="code-snippet"><span class="text-purple-400">import</span> numpy <span class="text-purple-400">as</span> np
+
+<span class="text-purple-400">def</span> <span class="text-blueprint-cyan">gyroid</span>(x, y, z):
+    <span class="text-slate-500">"""Implicit gyroid surface — F(x, y, z) = t."""</span>
+    <span class="text-purple-400">return</span> (np.sin(x) * np.cos(y)
+          + np.sin(y) * np.cos(z)
+          + np.sin(z) * np.cos(x))
+
+<span class="text-purple-400">def</span> <span class="text-blueprint-cyan">sample_field</span>(level_fn, n=<span class="text-hazard">160</span>, threshold=<span class="text-hazard">0.35</span>):
+    <span class="text-slate-500">"""Sample the level-set field on a regular grid.
     The resulting scalar field feeds marching-cubes
     to produce a watertight, LPBF-ready mesh.
     """</span>
-    <span class="v">grid</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">linspace</span>(<span class="n">0</span>, <span class="n">2</span> <span class="o">*</span> <span class="v">np</span>.<span class="v">pi</span>, <span class="v">n</span>)
-    <span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span> <span class="o">=</span> <span class="v">np</span>.<span class="f">meshgrid</span>(<span class="v">grid</span>, <span class="v">grid</span>, <span class="v">grid</span>)
-    <span class="k">return</span> (<span class="f">level_fn</span>(<span class="v">x</span>, <span class="v">y</span>, <span class="v">z</span>) <span class="o">-</span> <span class="v">threshold</span>).<span class="f">astype</span>(<span class="v">np</span>.<span class="v">float32</span>)
+    grid = np.linspace(<span class="text-hazard">0</span>, <span class="text-hazard">2</span> * np.pi, n)
+    x, y, z = np.meshgrid(grid, grid, grid)
+    <span class="text-purple-400">return</span> (level_fn(x, y, z) - threshold).astype(np.float32)
 
-<span class="c"># One unit cell, ready for laser powder bed fusion</span>
-<span class="v">field</span> <span class="o">=</span> <span class="f">sample_field</span>(<span class="v">gyroid</span>, <span class="v">n</span><span class="o">=</span><span class="n">160</span>, <span class="v">threshold</span><span class="o">=</span><span class="n">0.35</span>)
-<span class="f">print</span>(<span class="s">f"field sampled: {field.shape} · ready for meshing"</span>)</pre>
+<span class="text-slate-500"># One unit cell, ready for laser powder bed fusion</span>
+field = sample_field(gyroid, n=<span class="text-hazard">160</span>, threshold=<span class="text-hazard">0.35</span>)
+print(<span class="text-emerald-300">f"field sampled: {field.shape} · ready for meshing"</span>)</code></pre>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="research">
-  <div class="wrap">
-    <span class="kicker">// research_with_code</span>
-    <h2>Published work, backed by pipelines</h2>
-    <p class="lead">Every study below is supported by reproducible analysis code — from raw process logs to final figures.</p>
-    <div class="pubs">
+  <!-- SECTION 5: RESEARCH PUBLICATIONS -->
+  <section id="research" class="py-16 bg-industrial-bg border-b border-steel-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center space-x-3 mb-8">
+        <span class="font-mono text-hazard font-bold text-sm tracking-widest uppercase">// 05. RESEARCH &amp; PUBLICATIONS</span>
+        <div class="h-px bg-steel-border flex-1"></div>
+      </div>
+
+      <div class="mb-8">
+        <h2 class="font-condensed text-3xl sm:text-4xl font-extrabold text-white tracking-tight uppercase">
+          Published work, backed by pipelines
+        </h2>
+        <p class="text-slate-400 max-w-2xl text-sm sm:text-base">
+          Every study below is supported by reproducible analysis code — from raw process logs to final figures.
+        </p>
+      </div>
+
+      <!-- Publications List -->
+      <div class="space-y-6">
+        
+        <!-- Pub 1 (2026) -->
+        <div class="bg-steel/40 border-l-4 border-hazard border-t border-r border-b border-steel-border p-6 chamfer-box hover:bg-steel/60 transition-all reveal">
+          <div class="flex items-center justify-between font-mono text-xs mb-2">
+            <span class="text-hazard font-bold">YEAR: 2026 // LATEST PUBLICATION</span>
+            <span class="bg-hazard/10 text-hazard border border-hazard/30 px-2 py-0.5 text-[10px]">PEER-REVIEWED</span>
+          </div>
+          <h3 class="font-condensed font-bold text-xl sm:text-2xl text-white uppercase tracking-wider mb-2">
+            Do chopped fibers matter? Process–structure–property relationships and thermal annealing effects in fiber-reinforced TPMS lattices
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-3">
+            Investigated the effect of carbon fiber reinforced composite and annealing on mechanical properties of TPMS gyroid cubes.
+          </p>
+          <div class="font-mono text-xs text-blueprint-cyan">
+            Progress in Additive Manufacturing · Vol. xxx · pp. xxx–xxx
+          </div>
+        </div>
+
+        <!-- Pub 2 (2023) -->
+        <div class="bg-steel/40 border-l-4 border-blueprint-cyan border-t border-r border-b border-steel-border p-6 chamfer-box hover:bg-steel/60 transition-all reveal">
+          <div class="flex items-center justify-between font-mono text-xs mb-2">
+            <span class="text-blueprint-cyan font-bold">YEAR: 2023</span>
+            <span class="bg-blueprint-cyan/10 text-blueprint-cyan border border-blueprint-cyan/30 px-2 py-0.5 text-[10px]">JOURNAL ARTICLE</span>
+          </div>
+          <h3 class="font-condensed font-bold text-xl sm:text-2xl text-white uppercase tracking-wider mb-2">
+            Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-3">
+            Built the image-analysis and statistical pipeline used to quantify Ni evaporation, oxide- and Ti-rich phase formation across Primitive and Gyroid topologies — linking geometry and laser parameters to solid-phase distribution.
+          </p>
+          <div class="font-mono text-xs text-blueprint-cyan">
+            Journal of Manufacturing Processes · Vol. 102 · pp. 375–386
+          </div>
+        </div>
+
+        <!-- Pub 3 (2022) -->
+        <div class="bg-steel/40 border-l-4 border-ok-green border-t border-r border-b border-steel-border p-6 chamfer-box hover:bg-steel/60 transition-all reveal">
+          <div class="flex items-center justify-between font-mono text-xs mb-2">
+            <span class="text-ok-green font-bold">YEAR: 2022</span>
+            <span class="bg-ok-green/10 text-ok-green border border-ok-green/30 px-2 py-0.5 text-[10px]">JOURNAL ARTICLE</span>
+          </div>
+          <h3 class="font-condensed font-bold text-xl sm:text-2xl text-white uppercase tracking-wider mb-2">
+            Imperfections formation in thin layers of NiTi TPMS lattices fabricated using LPBF
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-3">
+            Designed the experimental-parameter sweep and defect-classification workflow that isolated the effects of relative density and scan strategy on balling and intergranular cracking in thin Schwarz TPMS layers.
+          </p>
+          <div class="font-mono text-xs text-blueprint-cyan">
+            Materials · 15(22), 7950
+          </div>
+        </div>
+
+        <!-- Pub 4 (2022) -->
+        <div class="bg-steel/40 border-l-4 border-yellow-200 border-t border-r border-b border-steel-border p-6 chamfer-box hover:bg-steel/60 transition-all reveal">
+          <div class="flex items-center justify-between font-mono text-xs mb-2">
+            <span class="text-yellow-200 font-bold">YEAR: 2022</span>
+            <span class="bg-yellow-200/10 text-yellow-200 border border-yellow-200/30 px-2 py-0.5 text-[10px]">CONFERENCE PROCEEDINGS</span>
+          </div>
+          <h3 class="font-condensed font-bold text-xl sm:text-2xl text-white uppercase tracking-wider mb-2">
+            Inhomogeneous microstructure due to non-uniform solidification rate in NiTi TPMS structures
+          </h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-3">
+            Developed the SEM feature-mapping workflow used to document ten distinct microstructural regimes across lattice struts, providing the quantitative basis for solidification-rate hypotheses in architected AM parts.
+          </p>
+          <div class="font-mono text-xs text-blueprint-cyan">
+            ASME IMECE · Columbus, Ohio, USA
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: CONTACT -->
+  <section id="contact" class="py-16 bg-steel/30 border-b border-steel-border text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      <div class="inline-flex items-center space-x-2 bg-hazard/10 border border-hazard/30 px-3 py-1 text-xs font-mono text-hazard uppercase mb-4">
+        <span>// CONTACT_INTERFACE</span>
+      </div>
+
+      <h2 class="font-condensed text-4xl sm:text-5xl font-extrabold text-white tracking-tight uppercase mb-4">
+        Let's build something precise.
+      </h2>
+
+      <p class="text-slate-300 text-base sm:text-lg mb-8 max-w-2xl mx-auto leading-relaxed">
+        Open to R&amp;D and advanced-manufacturing roles in aerospace, defense, and high-performance engineering — especially where computation meets the melt pool.
+      </p>
+
+      <div class="flex flex-wrap gap-4 justify-center">
+        <a href="mailto:contact@shahadathussain.com" class="bg-hazard hover:bg-yellow-400 text-black font-condensed font-bold text-lg px-8 py-3 uppercase tracking-wider transition-all chamfer-btn shadow-lg shadow-hazard/20">
+          ✉ GET IN TOUCH
+        </a>
+        <a href="https://github.com/drshahadathussain" target="_blank" rel="noopener" class="bg-steel hover:bg-steel-light border border-steel-border text-white font-mono text-sm px-6 py-3 transition-colors chamfer-btn">
+          GITHUB
+        </a>
+        <a href="https://ae.linkedin.com/in/shahadathussain" target="_blank" rel="noopener" class="bg-steel hover:bg-steel-light border border-steel-border text-white font-mono text-sm px-6 py-3 transition-colors chamfer-btn">
+          LINKEDIN
+        </a>
+        <a href="https://www.shahadathussain.com" target="_blank" rel="noopener" class="bg-steel hover:bg-steel-light border border-steel-border text-white font-mono text-sm px-6 py-3 transition-colors chamfer-btn">
+          MAIN SITE
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-industrial-bg py-8 border-t border-steel-border font-mono text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="text-center md:text-left">
+        <p class="text-slate-300 italic mb-1">
+          "Code is the new microscope for materials science. It allows us to see the unseen and design the impossible."
+        </p>
+        <p class="text-slate-500 text-[11px]">
+          © 2026 Dr. Shahadat Hussain · Industrial Edition · HTML, CSS &amp; Vanilla JS
+        </p>
+      </div>
+
+      <div class="flex items-center space-x-3 text-[11px]">
+        <span class="text-hazard font-bold">LAT: 24.4539° N</span>
+        <span>LON: 54.3773° E</span>
+        <span class="text-ok-green">ABU DHABI, UAE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING 3D LAB MONITOR (PRESERVED FUNCTIONALITY) -->
+  <div id="lab-monitor" class="fixed bottom-6 right-6 w-80 z-50 rounded-none border-2 border-steel-border bg-industrial-bg shadow-2xl chamfer-box hidden">
+    <div class="flex items-center justify-between px-3 py-2 bg-steel border-b border-steel-border">
+      <div class="flex items-center space-x-2">
+        <span class="w-2 h-2 rounded-full bg-hazard animate-pulse"></span>
+        <span class="font-mono text-[11px] text-slate-300 font-bold">LIVE_3D — TPMS_LATTICE.STL</span>
+      </div>
+      <button onclick="closeMonitor()" class="text-slate-400 hover:text-hazard font-mono text-sm leading-none p-1" title="Close Monitor">✕</button>
+    </div>
+    <iframe
+      id="monitor-frame"
+      src="https://sketchfab.com/models/d3a421c9e7be4f03974846f443693a4b/embed"
+      class="w-full h-52 border-0 block"
+      allow="autoplay; fullscreen; xr-spatial-tracking"
+      allowfullscreen
+      loading="lazy"></iframe>
+  </div>
+
+  <!-- Reopen Button -->
+  <button id="monitor-reopen" onclick="openMonitor()" class="fixed bottom-6 right-6 z-50 w-12 h-12 bg-hazard text-black font-extrabold text-xl flex items-center justify-center chamfer-btn shadow-2xl hover:bg-yellow-400 transition-all hidden" title="Reopen 3D Lab Monitor">
+    ⬡
+  </button>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // 1. Typing effect logic
+    const phrases = [
+      "r&d and materials engineer",
+      "tpms lattice algorithm developer",
+      "ml-driven additive manufacturing engineer",
+      "scientific computing practitioner"
+    ];
+    const typedEl = document.getElementById('typed');
+    let pi = 0, ci = 0, deleting = false;
     
-	<div class="pub reveal">
-        <span class="year">2026</span>
-        <h3>Do chopped fibers matter? Process–structure–property relationships and thermal annealing effects in fiber-reinforced TPMS lattices</h3>
-        <p>Investigated the effect of carbon fiber reinforced composite and annealing on mechanical properties of TPMS gyroid cubes.</p>
-        <div class="meta">Progress in Additive Manufacturing · Vol. xxx · pp. xxx–xxx</div>
-      </div>
-      <div class="pub reveal">
-        <span class="year">2023</span>
-        <h3>Microstructural and surface analysis of NiTi TPMS lattice sections fabricated by laser powder bed fusion</h3>
-        <p>Built the image-analysis and statistical pipeline used to quantify Ni evaporation, oxide- and Ti-rich phase formation across Primitive and Gyroid topologies — linking geometry and laser parameters to solid-phase distribution.</p>
-        <div class="meta">Journal of Manufacturing Processes · Vol. 102 · pp. 375–386</div>
-      </div>
-      <div class="pub reveal">
-        <span class="year">2022</span>
-        <h3>Imperfections formation in thin layers of NiTi TPMS lattices fabricated using LPBF</h3>
-        <p>Designed the experimental-parameter sweep and defect-classification workflow that isolated the effects of relative density and scan strategy on balling and intergranular cracking in thin Schwarz TPMS layers.</p>
-        <div class="meta">Materials · 15(22), 7950</div>
-      </div>
-      <div class="pub reveal">
-        <span class="year">2022</span>
-        <h3>Inhomogeneous microstructure due to non-uniform solidification rate in NiTi TPMS structures</h3>
-        <p>Developed the SEM feature-mapping workflow used to document ten distinct microstructural regimes across lattice struts, providing the quantitative basis for solidification-rate hypotheses in architected AM parts.</p>
-        <div class="meta">ASME IMECE · Columbus, Ohio, USA</div>
-      </div>
-    </div>
-  </div>
-</section>
+    (function type(){
+      const p = phrases[pi];
+      typedEl.textContent = p.slice(0, ci);
+      if (!deleting && ci < p.length){ ci++; setTimeout(type, 50); }
+      else if (!deleting){ deleting = true; setTimeout(type, 1800); }
+      else if (ci > 0){ ci--; setTimeout(type, 25); }
+      else { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(type, 350); }
+    })();
 
-<section id="contact" class="contact" style="background:var(--surface)">
-  <div class="wrap reveal">
-    <span class="kicker">// contact</span>
-    <h2>Let's build something precise.</h2>
-    <p class="lead">Open to R&amp;D and advanced-manufacturing roles in aerospace, defense, and high-performance engineering — especially where computation meets the melt pool.</p>
-    <div class="contact-links">
-      <a class="btn btn-primary" href="mailto:contact@shahadathussain.com">✉ Get in Touch</a> <!-- replace with your preferred email -->
-      <a class="btn btn-ghost" href="https://github.com/drshahadathussain" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn btn-ghost" href="https://ae.linkedin.com/in/shahadathussain" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn btn-ghost" href="https://www.shahadathussain.com" target="_blank" rel="noopener">Main Site</a>
-    </div>
-  </div>
-</section>
+    // 2. IntersectionObserver reveal animation
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting){
+          e.target.classList.add('on');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-<footer>
-  <div class="wrap foot">
-	<span class="motto"><b>“Code is the new microscope for materials science. It allows us to see the unseen and design the impossible.”</b></span>
-    <small>© 2026 Dr. Shahadat Hussain · Built with plain HTML, CSS &amp; vanilla JS — no frameworks, no trackers.</small>
-  </div>
-</footer>
+    // 3. Telemetry Clock
+    function updateClock() {
+      const now = new Date();
+      const utcStr = now.toUTCString().split(' ')[4] + ' UTC';
+      document.getElementById('telemetry-clock').textContent = utcStr;
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
 
-<script>
-  // typing effect
-  const phrases = [
-    "r&d and materials engineer",
-    "tpms lattice algorithm developer",
-    "ml-driven additive manufacturing engineer",
-    "scientific computing practitioner"
-  ];
-  const typedEl = document.getElementById('typed');
-  let pi = 0, ci = 0, deleting = false;
-  (function type(){
-    const p = phrases[pi];
-    typedEl.textContent = p.slice(0, ci);
-    if (!deleting && ci < p.length){ ci++; setTimeout(type, 55); }
-    else if (!deleting){ deleting = true; setTimeout(type, 1800); }
-    else if (ci > 0){ ci--; setTimeout(type, 28); }
-    else { deleting = false; pi = (pi + 1) % phrases.length; setTimeout(type, 350); }
-  })();
+    // 4. Parameter Sweep Telemetry Trigger Simulator
+    function triggerSimulation() {
+      const laserVal = Math.floor(Math.random() * (280 - 180) + 180);
+      const speedVal = Math.floor(Math.random() * (1200 - 700) + 700);
+      const ved = ((laserVal / (speedVal * 0.05 * 0.03))).toFixed(1);
+      
+      document.getElementById('gauge-laser-val').textContent = laserVal + ' W';
+      document.getElementById('gauge-laser-bar').style.width = Math.min(100, (laserVal/300)*100) + '%';
+      
+      document.getElementById('gauge-speed-val').textContent = speedVal + ' mm/s';
+      document.getElementById('gauge-speed-bar').style.width = Math.min(100, (speedVal/1500)*100) + '%';
+      
+      document.getElementById('ved-display').textContent = ved + ' J/mm³';
+      
+      const defectEl = document.getElementById('defect-display');
+      if (ved < 40 || ved > 90) {
+        defectEl.textContent = '8.4% (HIGH - BALLING)';
+        defectEl.className = 'font-bold text-lg text-alert-red';
+      } else {
+        defectEl.textContent = '0.02% (LOW)';
+        defectEl.className = 'font-bold text-lg text-ok-green';
+      }
+    }
 
-  // scroll reveal
-  const io = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); } });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-</script>
+    // 5. Interactive 2D Canvas TPMS Generator
+    const canvas = document.getElementById('tpmsCanvas');
+    const ctx = canvas.getContext('2d');
+    const inputThreshold = document.getElementById('input-threshold');
+    const inputFreq = document.getElementById('input-freq');
+    
+    function drawTPMS() {
+      if (!canvas) return;
+      canvas.width = canvas.clientWidth;
+      canvas.height = canvas.clientHeight;
+      const w = canvas.width;
+      const h = canvas.height;
+      
+      const threshold = parseFloat(inputThreshold.value);
+      const freq = parseFloat(inputFreq.value);
+      
+      document.getElementById('val-threshold').textContent = threshold.toFixed(2);
+      document.getElementById('val-freq').textContent = freq.toFixed(1);
+      
+      const imgData = ctx.createImageData(w, h);
+      const data = imgData.data;
+      
+      let solidCount = 0;
+      
+      for (let y = 0; y < h; y += 2) {
+        for (let x = 0; x < w; x += 2) {
+          const nx = (x / w) * Math.PI * freq;
+          const ny = (y / h) * Math.PI * freq;
+          const nz = Math.PI / 4; // Slice z-plane
+          
+          // Gyroid equation: sin(x)cos(y) + sin(y)cos(z) + sin(z)cos(x)
+          const val = Math.sin(nx)*Math.cos(ny) + Math.sin(ny)*Math.cos(nz) + Math.sin(nz)*Math.cos(nx);
+          
+          const isSolid = val > threshold;
+          if (isSolid) solidCount++;
+          
+          const idx = (y * w + x) * 4;
+          const r = isSolid ? 255 : 15;
+          const g = isSolid ? 183 : 19;
+          const b = isSolid ? 3 : 24;
+          
+          // Fill 2x2 block for speed
+          for (let dy = 0; dy < 2; dy++) {
+            for (let dx = 0; dx < 2; dx++) {
+              const pIdx = ((y + dy) * w + (x + dx)) * 4;
+              data[pIdx] = r;
+              data[pIdx+1] = g;
+              data[pIdx+2] = b;
+              data[pIdx+3] = 255;
+            }
+          }
+        }
+      }
+      ctx.putImageData(imgData, 0, 0);
+      
+      // Update calculations
+      const totalPixels = (w * h) / 4;
+      const density = ((solidCount / totalPixels) * 100).toFixed(1);
+      document.getElementById('calc-density').textContent = density + ' %';
+      document.getElementById('calc-porosity').textContent = (100 - density).toFixed(1) + ' %';
+      
+      const statusEl = document.getElementById('calc-status');
+      if (density < 10 || density > 75) {
+        statusEl.textContent = 'UNSTABLE';
+        statusEl.className = 'font-bold text-alert-red';
+      } else {
+        statusEl.textContent = 'OPTIMAL';
+        statusEl.className = 'font-bold text-ok-green';
+      }
+    }
 
-	<!-- ============ FLOATING 3D LAB MONITOR ============ -->
-<div id="lab-monitor" style="position:fixed; bottom:24px; right:24px; width:320px; z-index:99; border-radius:12px; overflow:hidden; border:1px solid #2b3d54; background:#0d1117; box-shadow:0 16px 48px rgba(0,0,0,.6); display:none;">
-  <div style="display:flex; align-items:center; justify-content:space-between; padding:8px 12px; background:#151b23; border-bottom:1px solid #1e2a3a;">
-    <span style="font-family:'JetBrains Mono',monospace; font-size:.68rem; color:#5c6b7a;">live_3d — tpms_lattice.stl</span>
-    <button onclick="closeMonitor()" style="background:none; border:none; color:#8b98a5; cursor:pointer; font-size:14px; line-height:1; padding:2px;" title="Close">✕</button>
-  </div>
-  <iframe
-    id="monitor-frame"
-    src="https://sketchfab.com/models/d3a421c9e7be4f03974846f443693a4b/embed"
-    style="width:100%; height:210px; border:0; display:block;"
-    allow="autoplay; fullscreen; xr-spatial-tracking"
-    allowfullscreen
-    loading="lazy"></iframe>
-</div>
+    inputThreshold.addEventListener('input', drawTPMS);
+    inputFreq.addEventListener('input', drawTPMS);
+    window.addEventListener('resize', drawTPMS);
+    setTimeout(drawTPMS, 200);
 
-<!-- Reopen button (shows only after you close the monitor) -->
-<button id="monitor-reopen" onclick="openMonitor()" style="position:fixed; bottom:24px; right:24px; z-index:99; width:46px; height:46px; border-radius:50%; border:1px solid #2b3d54; background:#101720; color:#4cc9f0; font-size:20px; cursor:pointer; box-shadow:0 8px 24px rgba(0,0,0,.5); display:none;" title="Show 3D model">⬡</button>
+    // 6. Copy Code Script logic
+    function copyCode() {
+      const codeText = document.getElementById('code-snippet').innerText;
+      const dummy = document.createElement('textarea');
+      document.body.appendChild(dummy);
+      dummy.value = codeText;
+      dummy.select();
+      document.execCommand('copy');
+      document.body.removeChild(dummy);
 
-<script>
-  const monitor = document.getElementById('lab-monitor');
-  const reopenBtn = document.getElementById('monitor-reopen');
-  const frame = document.getElementById('monitor-frame');
-  const frameSrc = frame.src; // remember URL so we can unload it when closed
+      const copyBtnText = document.getElementById('copy-text');
+      copyBtnText.textContent = 'COPIED!';
+      setTimeout(() => {
+        copyBtnText.textContent = 'COPY_SCRIPT.PY';
+      }, 2000);
+    }
 
-  function openMonitor(){
-    frame.src = frameSrc;      // reload model
-    monitor.style.display = 'block';
-    reopenBtn.style.display = 'none';
-  }
-  function closeMonitor(){
-    monitor.style.display = 'none';
-    reopenBtn.style.display = 'block';
-    frame.src = '';            // unload iframe to save memory
-  }
+    // 7. Floating 3D Monitor Logic
+    const monitor = document.getElementById('lab-monitor');
+    const reopenBtn = document.getElementById('monitor-reopen');
+    const frame = document.getElementById('monitor-frame');
+    const frameSrc = frame ? frame.src : '';
 
-  // Auto-open after 2 seconds, but only on desktop screens
-  if (window.innerWidth > 768) {
-    setTimeout(openMonitor, 2000);
-  }
-</script>
+    function openMonitor(){
+      if (frame) frame.src = frameSrc;
+      if (monitor) monitor.style.display = 'block';
+      if (reopenBtn) reopenBtn.style.display = 'none';
+    }
 
+    function closeMonitor(){
+      if (monitor) monitor.style.display = 'none';
+      if (reopenBtn) reopenBtn.style.display = 'flex';
+      if (frame) frame.src = '';
+    }
+
+    if (window.innerWidth > 768) {
+      setTimeout(openMonitor, 2000);
+    }
+  </script>
 </body>
 </html>
